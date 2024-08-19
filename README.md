@@ -21,5 +21,4 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Java (Orientação a Objetos)
 - **Banco de Dados:** A decidir
-- 
 - **Metodologia Ágil:** Scrum
