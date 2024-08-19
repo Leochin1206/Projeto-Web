@@ -18,7 +18,7 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 
 ## Tecnologias Utilizadas
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** React JS
 - **Backend:** Java (Orientação a Objetos)
 - **Banco de Dados:** A decidir
 - **Metodologia Ágil:** Scrum
