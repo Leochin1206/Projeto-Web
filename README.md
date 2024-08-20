@@ -1,4 +1,10 @@
-# Projeto de Web
+# Projeto de Webgit 
+
+## Participantes: 
+- João Pedro Alves Belai
+- João Pedro de Souza
+- Leonardo Albergoni Viana
+- Pedro Henrique da Silva dos Santos 
 
 ## Descrição
 
