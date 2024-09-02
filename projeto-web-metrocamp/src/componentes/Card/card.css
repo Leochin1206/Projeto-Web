@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.Publicacao {
+  height: min-content;
+  margin: 5%;
+  width: 20%;
+  border: 3px solid #1565c0;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ParedeImg img {
+  height: 210px;
+  width: 100%;
+  border-radius: 21px 21px 0 0;
+}
+
+.Publicacao h1 {
+  font-size: 20px;
+  font-family: "Inter";
+  margin: 10px 45px 15px 0px;
+}
+
+.Publicacao h5 {
+  font-size: 18px;
+  font-family: "Inter";
+  margin: 15px 45px 10px 0px;
+  color: black;
+}
+
+.Publicacao h6 {
+  color: #1565c0;
+  font-family: "Inter";
+  font-size: 13px;
+}
+
+.TrabalhosPost {
+  height: 18px;
+  width: 90px;
+  background-color: #b7dbf4;
+  border: 1px solid #1565c0;
+  border-radius: 30px;
+  margin: 15px 45px 10px 10px;
+}
+
+.TrabalhosPost h6 {
+  margin: 0;
+}
+
+
+.LocalizacaoPost {
+  display: flex;
+  align-items: center;
+  margin: 15px 45px 10px 10px;
+}
+
+.LocalizacaoPost h5 {
+  margin: 0;
+}

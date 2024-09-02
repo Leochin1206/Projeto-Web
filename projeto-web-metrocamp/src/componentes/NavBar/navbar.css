@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+.NavBar {
+  display: flex;
+  flex: 1;
+  background-color: #1565c0;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+  height: 8%;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.search-box {
+  display: flex;
+  width: 35%;
+  height: 2.1rem;
+  align-items: center;
+  align-self: center;
+}
+
+.NavBar h5 {
+  color: white;
+  text-align: center;
+  font-family: "Inter";
+  margin-right: 25px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+#search {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+::placeholder {
+  color: black;
+}
+
+#search-button {
+  margin-right: -8%;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  margin-bottom: -1%;
+  font-size: 20px;
+}
+
+.icons{
+  display: flex;
+  margin-left: 25px ; 
+}
+
+.home-icon {
+  color: white;
+  font-size: 30px;
+  margin: 30px;
+}
+
+.clipboard-icon {
+  filter: invert(100%);
+  font-size: 30px;
+  margin: 30px;
+}
+.user-icon {
+  filter: invert(100%);
+  font-size: 30px;
+  margin: 30px;
+}

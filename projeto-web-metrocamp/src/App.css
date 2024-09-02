@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,100 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.button-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.25rem;
+}
+
+.area-botao-criar {
+  background-color: #1565c0;
+  border-radius: 1.875rem;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.area-botao-criar h1 {
+  color: white;
+  font-size: 1.563rem;
+  font-family: 'Inter';
+  font-weight: 700;
+  margin: 0.625rem;
+}
+
+.area-botao-criar h5 {
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Inter';
+  margin: 0rem 0.625rem 0.313rem 0.625rem;
+}
+
+.botao-criar {
+  background-color: #ffffff;
+  border-radius: 1.875rem;
+  width: 35%;
+  height: 150%;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin: 0.625rem;
+}
+
+.botao-criar button{
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: 'Inter';
+  cursor: pointer;
+}
+
+.filtro{
+  margin-bottom: 0;
+}
+
+.filtro h1{
+  font-size: 2.188rem;
+  font-family: 'Inter';
+  font-weight: bold;
+  margin-top: 1.875rem;
+  margin-bottom: 2.813rem;
+}
+
+.filtro .escrita{
+  display: flex;
+}
+
+
+.filtro .botoes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.filtro .botoes .conjunto h6{
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: 'Inter';
+  margin-top: 0.313rem;
+}
+
+.filtro .botoes .conjunto button{
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 0.625rem;
+  background: none;
+  border: 0.063rem solid #dfdddd;
+  cursor: pointer;
+  box-shadow: 0.375rem 0.313rem 0.5rem rgba(0, 0, 0, 0.2);
+  font-size: 1.563rem;
+}
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
