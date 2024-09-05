@@ -7,12 +7,19 @@ import { GiElectricalResistance, GiVacuumCleaner, GiWateringCan, GiGate } from "
 import { FaTruck, FaPaintRoller } from "react-icons/fa";
 import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Cadastro } from './telas/Cadastro';
 
 function App() {
   return (
     <div className="App">
 
+    <Router>
       <NavBar />
+      <Routes>
+      <Route path='/Cadastro' element={<Cadastro/>}/>
+      </Routes>
+    </Router>
       <div className='button-area'>
 
         <div className='area-botao-criar'>

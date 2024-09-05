@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+.Cadastro{
+    display: flex;
+    flex: 1;
+    justify-content: center ;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #1565C0;
+    border-radius: 20px;
+    padding: 6%;
+}
+
+label{
+    color: black;
+    font-size: 20px;
+}
+
+input[type="password"],
+input[id="password"],
+textarea {
+            width: 100%;
+            padding: 2%;
+            border: 2px solid #1565C0;
+            border-radius: 10px;
+        }
+
+input[type="text"],
+input[id="email"],
+textarea {
+            width: 100%;
+            padding: 2%;
+            border: 2px solid #1565C0;
+            border-radius: 10px;
+        }
+
+.botao-forms{
+    background-color: #1565C0;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+    height: 12%;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+input[type="number"],
+input[id="cellphone"],
+textarea {
+            width: 100%;
+            padding: 2%;
+            border: 2px solid #1565C0;
+            border-radius: 10px;
+        }
+
+
+input[type="number"],
+input[id="cellphone"],
+textarea {
+            width: 100%;
+            padding: 2%;
+            border: 2px solid #1565C0;
+            border-radius: 10px;
+        }
+
+input[type="text"],
+input[id="nome"],
+textarea {
+            width: 100%;
+            padding: 2%;
+            border: 2px solid #1565C0;
+            border-radius: 10px;
+        }
