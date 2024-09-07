@@ -87,6 +87,7 @@
   font-size: 1.25rem;
   font-family: 'Inter';
   cursor: pointer;
+  width: 100%;
 }
 
 .filtro{
@@ -108,7 +109,8 @@
 
 .filtro .botoes{
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .filtro .botoes .conjunto h6{

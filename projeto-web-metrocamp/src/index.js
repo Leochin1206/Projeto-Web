@@ -3,13 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Cadastro } from './telas/Cadastro';
+import  MainLayout  from "./telas/MainLayout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+const Routing = () => (
+  <Router>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
+        <Route path="/Cadastro" element={<Cadastro />} />
+        {/* Adicione outras rotas conforme necessário */}
+      </Route>
+    </Routes>
+  </Router>
+);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//Renderiza as rotas.
 root.render(
   <React.StrictMode>
-    <App />
+    <Routing/>
   </React.StrictMode>
-);
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

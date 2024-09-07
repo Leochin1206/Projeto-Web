@@ -5,7 +5,7 @@ import { FaClipboardList } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import logo from "../../images/logo.png"
 import { Link } from "react-router-dom";
-//<FaClipboardList />
+
 
 
 export function NavBar() {
@@ -19,9 +19,8 @@ export function NavBar() {
                     <input type="search" id="search" placeholder="O que você procura?" />
                 </div>
                 <div className="icons">
-                   <div className="home-icon"><FaHome /></div>
-                    
-                    <Link to ="/Cadastro"><div className="clipboard-icon">Cadastrar</div></Link>
+                    <Link to ="/"><div className="home-icon"><FaHome /></div></Link>
+                    <div className="clipboard-icon"><FaClipboardList /></div>
                     <div className="user-icon"><FaUser /></div>
                 </div>
             </div>
