@@ -7,12 +7,14 @@ import { GiElectricalResistance, GiVacuumCleaner, GiWateringCan, GiGate } from "
 import { FaTruck, FaPaintRoller } from "react-icons/fa";
 import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
+import { CardPrancheta } from './componentes/CardPrancheta/CardPrancheta';
 
 function App() {
   return (
     <div className="App">
 
       <NavBar />
+
       <div className='button-area'>
 
         <div className='area-botao-criar'>
