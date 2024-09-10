@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.Prestado{
+    width: 30%;
+    height: 70px;
+    background-color: #1565C0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s ease; 
+}
+
+h1{
+    font-family: 'Inter';
+    font-size: 250%;
+    color: white;
+    margin: 0;
+}

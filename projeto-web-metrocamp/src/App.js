@@ -8,11 +8,12 @@ import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { CardPrancheta } from './componentes/CardPrancheta/CardPrancheta';
 
 function App() {
 
   const [isLogged, setIsLogged] = useState(false)
-  
+
   const navigate = useNavigate();
   const CheckCadastro = () => {
     if (!isLogged) {
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
 
+      <NavBar />
       <div className='button-area'>
 
         <div className='area-botao-criar'>
@@ -41,7 +43,7 @@ function App() {
           <h5>Encontre um profissional!</h5>
 
           <div className='botao-criar'>
-          <button onClick={isLogged ? "" : CheckCadastro}>Buscar</button>
+            <button onClick={isLogged ? "" : CheckCadastro}>Buscar</button>
           </div>
         </div>
       </div>
@@ -52,57 +54,57 @@ function App() {
         <div className='botoes'>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><PiSolarRoofDuotone /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><PiSolarRoofDuotone /></button>
             <h6>Calheiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><GiElectricalResistance /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><GiElectricalResistance /></button>
             <h6>Eletricista</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><PiPipeBold /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><PiPipeBold /></button>
             <h6>Encanador(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><GiVacuumCleaner /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><GiVacuumCleaner /></button>
             <h6>Faxineiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><FaTruck /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><FaTruck /></button>
             <h6>Fretes</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><GiWateringCan /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><GiWateringCan /></button>
             <h6>Jardineiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><MdOutlineCarpenter /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><MdOutlineCarpenter /></button>
             <h6>Marceneiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><FaTrowelBricks /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><FaTrowelBricks /></button>
             <h6>Pedreiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><FaPaintRoller /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><FaPaintRoller /></button>
             <h6>Pintor(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><GiGate /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><GiGate /></button>
             <h6>Serralheiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-          <button onClick={isLogged ? "" : CheckCadastro}><BsThreeDots /></button>
+            <button onClick={isLogged ? "" : CheckCadastro}><BsThreeDots /></button>
             <h6>Outros</h6>
           </div>
         </div>
