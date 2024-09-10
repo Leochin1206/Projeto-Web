@@ -30,6 +30,7 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 - **Metodologia Ágil:** Scrum
 
 ## Instalações necessárias
--**npm install
--**npm install reacat-router-dom
--**npm install react-icons --save
+
+- **npm install**
+- **npm install reacat-router-dom**
+- **npm install react-icons --save**
