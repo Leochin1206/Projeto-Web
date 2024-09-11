@@ -26,7 +26,6 @@ function App() {
   return (
     <div className="App">
 
-      <NavBar />
       <div className='button-area'>
 
         <div className='area-botao-criar'>

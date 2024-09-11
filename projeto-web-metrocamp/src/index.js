@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Cadastro } from './telas/Cadastro';
 import  MainLayout  from "./telas/MainLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Clipboard } from './telas/Clipboard';
 
 const Routing = () => (
   <Router>
@@ -13,6 +14,7 @@ const Routing = () => (
       <Route path="/" element={<MainLayout />}>
         <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
         <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/Clipboard" element ={<Clipboard />}/>
         {/* Adicione outras rotas conforme necessário */}
       </Route>
     </Routes>
