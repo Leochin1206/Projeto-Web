@@ -1,15 +1,13 @@
-import { Fragment } from "react";
 import "../CardPrancheta/cardprancheta.css";
 import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
-import { MdAccountCircle } from "react-icons/md";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import icone from "./icone.png";
+import { FaUserCircle } from "react-icons/fa";
 
 export function CardPrancheta() {
     return (
         <div>
             <div className="Funcao">
-                <img src={icone} alt=""/>
+                <FaUserCircle id="IconeUsuario"/>
 
                 <h6>Renato Willian</h6>
 

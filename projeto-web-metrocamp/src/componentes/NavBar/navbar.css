@@ -63,12 +63,12 @@
 }
 
 .clipboard-icon {
-  filter: invert(100%);
+  color: white;
   font-size: 30px;
   margin: 30px;
 }
 .user-icon {
-  filter: invert(100%);
+  color: white;
   font-size: 30px;
   margin: 30px;
 }

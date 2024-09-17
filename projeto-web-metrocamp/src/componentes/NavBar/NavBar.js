@@ -20,7 +20,7 @@ export function NavBar() {
                 </div>
                 <div className="icons">
                     <Link to ="/"><div className="home-icon"><FaHome /></div></Link>
-                    <div className="clipboard-icon"><FaClipboardList /></div>
+                    <Link to="/Clipboard"><div className="clipboard-icon"><FaClipboardList /></div></Link>
                     <div className="user-icon"><FaUser /></div>
                 </div>
             </div>

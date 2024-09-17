@@ -1,0 +1,33 @@
+.PerfilUsuario{
+    width: 24%;
+    height:7vh;
+    background-color: #B7DBF4;
+    border-radius: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .PerfilUsuario img{
+    width: 45px;
+    height: 45px;
+    padding-bottom: 1vh;
+  }
+  
+  .PerfilUsuario h5{
+    font-size: 14px;
+    font-family: 'Inter';
+  }
+  
+  .PerfilUsuario h6{
+    font-size: 10px;
+    font-family: 'Inter';
+  }
+  
+  .Bolinha{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: black;
+  }
