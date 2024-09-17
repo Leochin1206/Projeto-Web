@@ -7,6 +7,11 @@ export function Cadastro() {
 
     return (
         <div className="Cadastro">
+
+            <div className="style_cadastro_logo">
+                <h5>Cadastro</h5>
+            </div>
+            
             <form className="forms" action="https://webhook.site/6eb59883-6c66-4d25-80be-115a37a0ad17" method="get">
                 <div className="acertaForms">
 
@@ -21,16 +26,6 @@ export function Cadastro() {
                     </span>
 
                     <span className="campos">
-                        <label for="number">*Celular:</label>
-                        <input type="number" name="cellphone" id="cellphone" placeholder="Digite seu número" required></input>
-                    </span>
-
-                    <span className="campos">
-                        <label for="text">*Cidade:</label>
-                        <input type="text" name="city" id="city" placeholder="Digite sua cidade" required></input>
-                    </span>
-
-                    <span className="campos">
                         <label for="password">*Senha:</label>
                         <input type="password" name="password" id="password" placeholder="Digite sua senha" required></input>
                     </span>
@@ -39,7 +34,7 @@ export function Cadastro() {
 
 
 
-                                <Link to=""><h3>Já tem uma conta? Faça Login!</h3></Link>
+                                <Link to="/Login"><h3>Já tem uma conta? Faça Login!</h3></Link>
                 </div>
                 
 

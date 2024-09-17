@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Cadastro } from './telas/Cadastro';
-import  MainLayout  from "./telas/MainLayout";
+import { Cadastro } from './telas/Cadastro/Cadastro';
+import  MainLayout  from "./telas/Cadastro/MainLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Login } from './telas/Login/Login';
 
 const Routing = () => (
   <Router>
@@ -13,6 +14,7 @@ const Routing = () => (
       <Route path="/" element={<MainLayout />}>
         <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
         <Route path="/Cadastro" element={<Cadastro />} />
+        <Route path="/Login" element={<Login />} />
         {/* Adicione outras rotas conforme necessário */}
       </Route>
     </Routes>
