@@ -32,5 +32,5 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 ## Instalações necessárias
 
 - **npm install**
-- **npm install reacat-router-dom**
+- **npm install react-router-dom**
 - **npm install react-icons --save**
