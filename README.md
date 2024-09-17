@@ -28,3 +28,9 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 - **Backend:** Java (Orientação a Objetos)
 - **Banco de Dados:** A decidir
 - **Metodologia Ágil:** Scrum
+
+## Instalações necessárias
+
+- **npm install**
+- **npm install reacat-router-dom**
+- **npm install react-icons --save**
