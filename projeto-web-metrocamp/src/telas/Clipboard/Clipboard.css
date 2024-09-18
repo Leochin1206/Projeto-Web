@@ -1,68 +1,135 @@
-.Funcao{
+.Servico h1{
     width: 20%;
-    height: 80%;
+    height: 67px;
     background-color: #B7DBF4;
-    border: 3px solid #1565C0;
-    border-radius: 25px;
-    box-sizing: border-box;
+    border-radius: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-  }
-  
+}
 
-  .Icons{
+.CriarPostPerfil{
+    width: 300px;
+    height: 45px;
+    background-color: #B7DBF4;
+    border-radius: 35px;
+    border: 2px solid #1565C0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    padding: 0 10px;
+}
+
+.perfilDetalhadoDontainer {
+    width: 300px;
+    border: 2px solid #1565C0;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.perfilDados {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    background-color: #B7DBF4;
+    width: 100%;
+}
+
+.iconeUser {
+    font-size: 60px;
+    color: #000;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#centralizarNota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+.servicos {
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 0px 0px;
-  }
+    padding: 20px 0;
+    border-bottom: 1px solid #000000;
+}
 
- .Perfil-picture{  
-    font-size: 200%;
-    margin: 0px 0px 0px 0px;
-  }
+.servicos h5 {
+    font-size: 14px;
+}
 
-  .Check{
-    font-size: 120%;
-    margin: 0px 0px 0px 0px;
-  }
+.servicosNum {
+    font-size: 18px;
+    color: #1565C0;
+}
 
+.avaliacoes {
+    padding-top: 20px;
+}
 
-  .Funcao h6{
-    font-family: 'Inter';
-    margin: 0px 0px 0px 0px;
-    font-size: 120%;
-  }
-  
-  .Funcao h3{
-    font-family: 'Inter';
-    margin: 0px 0px 0px 0px;
-    font-size: 80% ;
-  }
+.avaliacoes h5 {
+    font-size: 14px;
+    margin: 0;
+}
 
-  .Estrela{
-    font-size: 100%;
-    color:yellow;
-    margin: 0px 0px 0px 0px;
-  }
+.avaliacoes span {
+    font-weight: normal;
+    color: #777;
+}
 
-  .Reboco{
-    width: 80%;
-    height: 15%;
-    background-color: #ffffff;
-    border: 3px solid #1565C0;
-    border-radius: 30px;
+.estrelas {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+    padding: 10px 0;
+}
 
-  .Funcao .Reboco h6{
-    font-family: 'Inter';
+.estrela {
+    font-size: 24px;
+    color: #FFD700;
+}
+
+.estrela.vazia {
+    color: #ccc;
+}
+
+.ultimaAvaliacao {
+    display: flex;
+    background-color: #E7F3FF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.iconeAvaliacao {
+    font-size: 30px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.nomeAvaliacao {
+    font-weight: bold;
+}
+
+p {
     margin: 5px 0;
-    font-size: 105%;
-  }
+    font-size: 12px;
+}
+
