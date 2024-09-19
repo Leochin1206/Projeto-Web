@@ -21,7 +21,7 @@ export function NavBar() {
                 <div className="icons">
                     <Link to ="/"><div className="home-icon"><FaHome /></div></Link>
                     <Link to="/Clipboard"><div className="clipboard-icon"><FaClipboardList /></div></Link>
-                    <div className="user-icon"><FaUser /></div>
+                    <Link to="/Perfil"><div className="user-icon"><FaUser /></div></Link>
                 </div>
             </div>
     )       

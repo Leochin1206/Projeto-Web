@@ -12,7 +12,7 @@
     gap: 15px; 
 }
 
-.PerfilUsuario {
+.PubliPerfil .Perfil-card .PerfilUsuario{
     width: 95%;
     height: 17%; 
     background-color: #B7DBF4;
@@ -22,7 +22,7 @@
     justify-content: space-around;
 }
 
-.PerfilUsuario img{
+.PubliPerfil .Perfil-card .PerfilUsuario img{
     width: 50px;
     height: 50px;
 }

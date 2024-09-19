@@ -10,7 +10,7 @@ export function CardPerfil(){
     return(
         <>
             <div className="PubliPerfil">
-                <Perfil />
+                <Perfil className="Perfil-card"/>
                 <h4>Pinto sua parede da cor que você quiser aqui na região de Pato Branco - PR, a cor e as tintas são disponibilizadas pelo cliente, levo apenas o ajudante e os materiais... <span class="verMais">Ver Mais</span></h4>
                 <div className="ImagensPost">
                     <img src={pintandoParede1} alt="Pessoa Pintando 1" className="imagem-principal" />
