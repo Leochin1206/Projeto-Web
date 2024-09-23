@@ -1,3 +1,15 @@
+.divPrincipal{
+    display: flex;
+}
+
+.CentraliarCoisas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .Servico {
     width: 20%;
     margin-top: 2%;
@@ -33,16 +45,18 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 
 .perfilDetalhadoDontainer {
-    width: 300px;
+    height: min-content;
     border: 2px solid #1565C0;
     border-radius: 15px;
     padding: 20px;
     background-color: #fff;
     font-family: 'Inter', sans-serif;
+    margin-top: 14%;
 }
 
 .perfilDados {
@@ -148,6 +162,14 @@ p {
 .CentralizarCards{
     display: flex;
     margin-left: 3%;
-    margin-top: -7%;
+}
+
+.CentralizarCardPerfil{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
 }
 

@@ -1,21 +1,10 @@
 import '../PerfilScreen/PerfilScreen.css'
-import { CardPrancheta } from "../../componentes/CardPrancheta/CardPrancheta";
-import { Perfil } from "../../componentes/Perfil/Perfil";
 import { CardPerfil } from "../../componentes/CardPerfil/CardPerfil";
 import { FaUserCircle, FaStar } from "react-icons/fa";
 
 export function PerfilScreen() {
     return(
-        <>
-            <div className="CentralizarServico">
-                <div className="Servico">
-                    <h1>Serviço</h1>
-                </div>
-                <button className="CriarPostPerfil">
-                    Criar Novo Post
-                </button>
-            </div>
-
+        <div className="divPrincipal">
             <div className="CentralizarCards">
                 <div className="perfilDetalhadoDontainer">
                     <div className="perfilDados">
@@ -23,7 +12,7 @@ export function PerfilScreen() {
                         <h2>Renato Willian</h2>
                         <h4>Calheiro | Pedreiro | Encanador</h4>
                     </div>
-                    
+                        
                     <div className="servicos">
                         <div className="servicosPrestados">
                             <h5>Serviços Prestados</h5>
@@ -70,12 +59,24 @@ export function PerfilScreen() {
                     </div>
                 </div>
             </div>
-            <div className="CentralizarCardPerfil">
-                <CardPerfil />
-                <CardPerfil />
-                <CardPerfil />
-                <CardPerfil />
+
+            <div className="CentralizarServico">
+                <div className="CentraliarCoisas">
+                    <div className="Servico">
+                        <h1>Serviço</h1>
+                    </div>
+                    <button className="CriarPostPerfil">
+                        Criar Novo Post
+                    </button>
+                </div>
+
+                <div className="CentralizarCardPerfil">
+                    <CardPerfil />
+                    <CardPerfil />
+                    <CardPerfil />
+                    <CardPerfil />
+                </div>
             </div>
-        </>
+        </div>
     );
 }

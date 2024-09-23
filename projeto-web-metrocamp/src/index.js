@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Login } from './telas/Login/Login';
 import { PerfilScreen } from './telas/PerfilScreen/PerfilScreen';
 import { Clipboard } from './telas/Clipboard/Clipboard';
+import { CriarNovoPost } from './telas/CriarNovoPost/CriarNovoPost';
 
 const Routing = () => (
   <Router>
@@ -19,6 +20,7 @@ const Routing = () => (
         <Route path="/Login" element={<Login />} />
         <Route path="/Clipboard" element ={<Clipboard />}/>
         <Route path="/Perfil" element={<PerfilScreen />}/>
+        <Route path="/CriarNovoPost" element={<CriarNovoPost />}/>
         {/* Adicione outras rotas conforme necessário */}
       </Route>
     </Routes>
