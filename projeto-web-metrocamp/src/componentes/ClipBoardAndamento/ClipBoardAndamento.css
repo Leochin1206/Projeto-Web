@@ -49,13 +49,20 @@
     height: 15%;
     background-color: #ffffff;
     border: 3px solid #777777;
-    color: #777777;
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+
+  .Reboco button{
+    color: #777777;
+    font-size: 19px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
   }
   
   .Funcao .Reboco h6{

@@ -22,7 +22,7 @@ export function ClipBoardAndamento() {
                 </div>
 
                 <div className='Reboco'>
-                    <h6>Finalizar Serviço</h6>
+                    <button>Finalizar Serviço</button>
                 </div>
                 <div className="Check"><FaHammer /></div>
             </div>

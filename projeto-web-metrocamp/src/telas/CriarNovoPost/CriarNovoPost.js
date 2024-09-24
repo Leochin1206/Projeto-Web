@@ -26,12 +26,22 @@ export function CriarNovoPost(){
                     <label><input type="checkbox" name="preco" value="min-max"></input>Preço fixo</label>
                     <label><input type="checkbox" name="preco" value="orcamento"></input>Preço fixo</label>
                 </div>
-                <div className="pricing-inputs">
+
+                <div id="precoFixoInput" className="pricing-inputs hidden">
+                    <span>R$</span>
+                    <input type="text" placeholder="Preço Fixo"></input>
+                </div>
+
+                <div id="minMaxInputs" className="pricing-inputs hidden">
                     <span>R$</span>
                     <input type="text" placeholder="Min"></input>
                     <span>-</span>
                     <input type="text" placeholder="Max"></input>
                 </div>
+            </div>
+
+            <div id="orcamentoInput" className="pricing-inputs hidden">
+                <input type="text" placeholder="Observação"></input>
             </div>
 
         </div>
