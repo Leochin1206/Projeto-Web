@@ -1,11 +1,12 @@
 import "../Perfil/perfil.css"
-import { FaUserCircle } from "react-icons/fa";
+import ImagemPerfil from '../../images/icone.png'
 
-export function Perfil(){
-    return(
+
+export function Perfil() {
+    return (
         <>
             <div className="PerfilUsuario">
-                <FaUserCircle id="IconeUsuario"/>
+                <img src={ImagemPerfil} alt="" className="imagem-perfil" />
                 <h5>Renato Willian</h5>
                 <div className="Bolinha"></div>
                 <h6>Calheiro | Pedreiro | Encanador</h6>
