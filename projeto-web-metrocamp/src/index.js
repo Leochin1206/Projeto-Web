@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Cadastro } from './telas/Cadastro/Cadastro';
-import  MainLayout  from "./telas/Cadastro/MainLayout";
+import MainLayout from "./telas/Cadastro/MainLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Login } from './telas/Login/Login';
+import { PerfilScreen } from './telas/PerfilScreen/PerfilScreen';
 import { Clipboard } from './telas/Clipboard/Clipboard';
+import { CriarNovoPost } from './telas/CriarNovoPost/CriarNovoPost';
+import { InfoService } from './telas/InfoService/InfoService';
 
 const Routing = () => (
   <Router>
@@ -16,7 +19,10 @@ const Routing = () => (
         <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
         <Route path="/Cadastro" element={<Cadastro />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Clipboard" element ={<Clipboard />}/>
+        <Route path="/Clipboard" element={<Clipboard />} />
+        <Route path="/Perfil" element={<PerfilScreen />} />
+        <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
+        <Route path="/InfoService" element={<InfoService />} />
         {/* Adicione outras rotas conforme necessário */}
       </Route>
     </Routes>
@@ -29,7 +35,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //Renderiza as rotas.
 root.render(
   <React.StrictMode>
-    <Routing/>
+    <Routing />
   </React.StrictMode>
 )
 

@@ -1,10 +1,10 @@
-import { CardPrancheta } from "../../componentes/CardPrancheta/CardPrancheta";
-import { Perfil } from "../../componentes/Perfil/Perfil";
+import '../Clipboard/Clipboard.css'
+import { ClipBoardAndamento } from '../../componentes/ClipBoardAndamento/ClipBoardAndamento'
 
-export function Clipboard(){
-    return(
+export function Clipboard() {
+    return (
         <>
-            <Perfil />
+            <ClipBoardAndamento />
         </>
     )
 }

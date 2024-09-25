@@ -1,22 +1,22 @@
 .PerfilUsuario{
-    width: 24%;
-    height:7vh;
+    width: 100%;
     background-color: #B7DBF4;
     border-radius: 30px; 
     display: flex;
     align-items: center;
     justify-content: space-around;
     align-items: center;
+    padding: 3%;
   }
   
   .PerfilUsuario img{
-    width: 45px;
-    height: 45px;
-    padding-bottom: 1vh;
+    width: 38px;
+    height: 38px;
+  
   }
   
   .PerfilUsuario h5{
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Inter';
   }
   
