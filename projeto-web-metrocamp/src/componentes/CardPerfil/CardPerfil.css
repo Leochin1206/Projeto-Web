@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .PubliPerfil {
-    width: 560px;
-    max-height: 700px; 
+    width: 350px;
+    height: 410px; 
     border: 3px solid #1565C0;
     border-radius: 25px;
     background-color: #fff; 
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px; 
-    margin-top: 3%;
+    margin-top: 7%;
     align-items: center;
 }
 
@@ -44,7 +44,7 @@ h6 {
 }
   
 .imagem-principal {
-    width: 300px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
@@ -67,11 +67,11 @@ h6 {
 .BotoesAcao {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
   
 .CriarPost {
-    width: 300px;
+    width: 100%;
     height: 45px;
     background-color: #B7DBF4;
     border-radius: 35px;
@@ -97,9 +97,10 @@ h6 {
 }
  
 .icone-editar, .icone-compartilhar {
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
     margin: 0 25px;
+    margin-top: -1%;
 }
 
 .Bolinha{

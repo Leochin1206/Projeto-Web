@@ -23,8 +23,8 @@ export function CriarNovoPost(){
                 <label>*Precificação: </label>
                 <div className="pricing-options">
                     <label><input type="checkbox" name="preco" value="preco-fixo"></input>Preço fixo</label>
-                    <label><input type="checkbox" name="preco" value="min-max"></input>Preço fixo</label>
-                    <label><input type="checkbox" name="preco" value="orcamento"></input>Preço fixo</label>
+                    <label><input type="checkbox" name="preco" value="min-max"></input>Min - Max</label>
+                    <label><input type="checkbox" name="preco" value="orcamento"></input>Mediante Orçamento</label>
                 </div>
 
                 <div id="precoFixoInput" className="pricing-inputs hidden">

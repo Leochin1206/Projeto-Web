@@ -1,11 +1,12 @@
 import '../PerfilScreen/PerfilScreen.css'
 import { CardPerfil } from "../../componentes/CardPerfil/CardPerfil";
 import { FaUserCircle, FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import ImagemPerfil from '../../images/icone.png'
 
 export function PerfilScreen() {
     return (
-        <div className="divPrincipal">
+        <div>
             <div className="CentralizarCards">
                 <div className="perfilDetalhadoDontainer">
                     <div className="perfilDados">
@@ -15,14 +16,13 @@ export function PerfilScreen() {
                     </div>
 
                     <div className="servicos">
-                        <div className="servicosPrestados">
+                        
                             <h5>Serviços Prestados</h5>
                             <p className="servicosNum">12</p>
-                        </div>
-                        <div className="servicosAprestar">
+       
                             <h5>Serviços à Prestar</h5>
                             <p className="servicosNum">4</p>
-                        </div>
+
                     </div>
 
                     <div className="avaliacoes">
@@ -66,9 +66,11 @@ export function PerfilScreen() {
                     <div className="Servico">
                         <h1>Serviços</h1>
                     </div>
-                    <button className="CriarPostPerfil">
-                        Criar Novo Post
-                    </button>
+                    <Link to="/CriarNovoPost">
+                        <button className="CriarPostPerfil">
+                            Criar Novo Post
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="CentralizarCardPerfil">
