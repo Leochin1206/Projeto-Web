@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+body {
+  overflow-x: hidden;
+}
+
 .NavBar {
   display: flex;
   flex: 1;
@@ -25,7 +29,7 @@
   color: white;
   text-align: center;
   font-family: "Inter";
-  margin-right: 25px;
+
   font-weight: 400;
   font-size: 14px;
 }
@@ -43,32 +47,32 @@
 }
 
 #search-button {
-  margin-right: -8%;
+
   z-index: 1;
   background-color: transparent;
   border: none;
-  margin-bottom: -1%;
+
   font-size: 20px;
 }
 
 .icons{
   display: flex;
-  margin-left: 25px ; 
+
 }
 
 .home-icon {
   color: white;
   font-size: 30px;
-  margin: 30px;
+
 }
 
 .clipboard-icon {
   color: white;
   font-size: 30px;
-  margin: 30px;
+
 }
 .user-icon {
   color: white;
   font-size: 30px;
-  margin: 30px;
+
 }

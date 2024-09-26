@@ -8,11 +8,10 @@ import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CardPrancheta } from './componentes/CardPrancheta/CardPrancheta';
 
 function App() {
 
-  const [isLogged, setIsLogged] = useState(false)
+  const [isLogged] = useState(false)
 
   const navigate = useNavigate();
   const CheckCadastro = () => {
@@ -110,10 +109,22 @@ function App() {
 
       </div>
 
-      <div className='Cards'>
-        <Card />
-        <Card />
-        <Card />
+      <div className='Cards-section'>
+        <h6>Mais recentes:</h6>
+        <div className='Cards'>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
 
     </div>

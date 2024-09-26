@@ -41,7 +41,9 @@
 
 .button-area{
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   justify-content: space-around;
   margin: 1.25rem;
 }
@@ -49,10 +51,11 @@
 .area-botao-criar {
   background-color: #1565c0;
   border-radius: 1.875rem;
-  width: 33%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5%;
 }
 
 .area-botao-criar h1 {
@@ -95,22 +98,32 @@
 }
 
 .filtro h1{
-  font-size: 2.188rem;
+  font-size: 27px;
   font-family: 'Inter';
   font-weight: bold;
   margin-top: 1.875rem;
-  margin-bottom: 2.813rem;
+  margin-bottom: 1.6rem;
 }
 
 .filtro .escrita{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 
-.filtro .botoes{
+.filtro .botoes {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  overflow-x: auto;  /* Adiciona barra de rolagem horizontal */
+  white-space: nowrap;  /* Garante que os botões fiquem em uma linha */
+  padding: 1rem;
+}
+
+.filtro .botoes .conjunto {
+  display: inline-block;  /* Garante que os botões fiquem lado a lado */
+  margin-right: 1rem;  /* Espaçamento entre os botões */
 }
 
 .filtro .botoes .conjunto h6{
@@ -134,5 +147,160 @@
 .Cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  overflow-x: auto;  
+  white-space: nowrap;  
+}
+
+.Cards > * {
+  display: inline-block;  
+  min-width: 200px;  
+  max-width: 200px; 
+  height: 350px;  
+  margin-right: 1rem; 
+  box-sizing: border-box;  
+}
+.Cards-section h6 {
+  font-size: 1.25rem;
+  font-family: 'Inter';
+  font-weight: bold;
+  margin-left: 1.25rem;
+  margin-top: 2rem;
+}
+
+/* Celulares Pequenos (320px - 480px) */
+@media (max-width: 480px) {
+  .area-botao-criar {
+    width: 95%;
+  }
+
+  .botao-criar {
+    width: 50%; /* Deixar os botões maiores */
+  }
+
+  .filtro h1 {
+    font-size: 1.5rem; /* Diminuir tamanho do texto */
+  }
+
+  .filtro .botoes .conjunto h6 {
+    font-size: 0.65rem; /* Ajustar tamanho do texto */
+  }
+
+  .Cards > * {
+    min-width: 150px; /* Ajustar tamanho dos cards */
+    height: 300px;
+  }
+}
+
+/* Celulares Médios (481px - 768px) */
+@media (max-width: 768px) {
+  .area-botao-criar {
+    width: 90%;
+  }
+
+  .botao-criar {
+    width: 45%;
+  }
+
+  .filtro h1 {
+    font-size: 1.75rem;
+  }
+
+  .filtro .botoes .conjunto h6 {
+    font-size: 0.7rem;
+  }
+
+  .Cards > * {
+    min-width: 175px;
+    height: 320px;
+  }
+}
+
+/* Tablets e Celulares Grandes (769px - 1024px) */
+@media (max-width: 1024px) {
+  .area-botao-criar {
+    width: 85%;
+  }
+
+  .botao-criar {
+    width: 40%;
+  }
+
+  .filtro h1 {
+    font-size: 2rem;
+  }
+
+  .filtro .botoes .conjunto h6 {
+    font-size: 0.75rem;
+  }
+
+  .Cards > * {
+    min-width: 190px;
+    height: 340px;
+  }
+}
+
+/* Laptops Pequenos (1025px - 1280px) */
+@media (max-width: 1280px) {
+  .area-botao-criar {
+    width: 80%;
+  }
+
+  .botao-criar {
+    width: 35%;
+  }
+
+  .filtro h1 {
+    font-size: 2.25rem;
+  }
+
+  .Cards > * {
+    min-width: 200px;
+    height: 350px;
+  }
+}
+
+/* Desktops Médios (1281px - 1440px) */
+@media (max-width: 1440px) {
+  .area-botao-criar {
+    width: 75%;
+  }
+
+  .botao-criar {
+    width: 30%;
+  }
+
+  .filtro h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktops Grandes (1441px - 1920px) */
+@media (max-width: 1920px) {
+  .area-botao-criar {
+    width: 70%;
+  }
+
+  .botao-criar {
+    width: 25%;
+  }
+
+  .filtro h1 {
+    font-size: 2.75rem;
+  }
+}
+
+/* Monitores Ultra-Largos ou 4K (>1920px) */
+@media (min-width: 1921px) {
+  .area-botao-criar {
+    width: 65%;
+  }
+
+  .botao-criar {
+    width: 20%;
+  }
+
+  .filtro h1 {
+    font-size: 3rem;
+  }
 }
