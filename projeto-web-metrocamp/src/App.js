@@ -47,7 +47,7 @@ function App() {
       </div>
 
       <div className='filtro'>
-        <h1>Algum destes pode te ajudar?</h1>
+        <h1 id='AlgumDesses'>Algum destes pode te ajudar?</h1>
 
         <div className='botoes'>
 
