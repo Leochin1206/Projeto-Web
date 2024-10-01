@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .Publicacao {
+  margin-top: 5%;
   height: min-content;
-  margin: 5%;
-  width: 20%;
+  min-width: 275px !important;
+  overflow: hidden;
   border: 3px solid #1565c0;
   border-radius: 25px;
   overflow: hidden;
