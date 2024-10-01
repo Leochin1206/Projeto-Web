@@ -15,6 +15,11 @@ body {
   width: 100%;
 }
 
+.NavBar img{
+  width:70px;
+  height: 70px;
+}
+
 .search-box {
   display: flex;
   width: 50%;
@@ -149,3 +154,50 @@ body {
 
 }
 }
+
+@media (min-width: 1900px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .NavBar {
+    display: flex;
+    flex: 1;
+    background-color: #1565c0;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    box-sizing: border-box;
+    justify-content: space-around;
+  }
+  
+
+  .NavBar img{
+    width:120px;
+    height: 120px;
+  }
+
+  .search-box{
+    margin-left: 100px;
+  }
+  
+  .icons{
+    display: flex;
+    gap: 70px;
+  }
+  
+  .home-icon {
+    color: white;
+    font-size: 45px;
+  }
+  
+  .clipboard-icon {
+    color: white;
+    font-size: 45px;
+  }
+
+  .user-icon {
+    color: white;
+    font-size: 45px;
+  }
+  }

@@ -28,7 +28,7 @@ export function NavBar() {
 
     return (
         <div className="NavBar">
-            <img src={logo} width="70px" alt="" height="70px" />
+            <img src={logo} alt="" />
 
             {isLargeScreen ? (
                 <>

@@ -1,67 +1,87 @@
-.InfoService{
-    display: flex;
-    flex-direction: row;
-    width: 765px;
-    height: 700px;
-}
-
-.Infos{
+.InfoService {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
-    margin-left: 100px;
+    width: 100%;
+    align-items: center;
 }
 
-.Infos h1{
-    margin-bottom: 20px;
-    font-size: 37px;
+.Infos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.Infos h1 {
+    font-size: 25px;
     font-family: 'Inter';
     font-weight: bolder;
+    align-self: center;
+    padding: 10px;
 }
 
-.ImageInfoPost{
-    width: 765px;
-    height: 455px;
+.slider {
+    position: relative;
+    overflow: hidden;
+    align-self: center;
+    display: flex;
+    width: 92%;
+    height: auto;
 }
 
-.botaoSetaTras{
-    height: 20px;
-    width: 20px;
+.ImageInfoPost {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 37%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);  
+    pointer-events: none;  
+}
+
+.botaoSetaTras, 
+.botaoSetaFrente {
     background: none;
     cursor: pointer;
     color: black;
     border: none;
-    font-size: 35px;
-    margin-top: -32%; 
-    margin-bottom: 230px;
-}
-
-.botaoSetaFrente{
-    height: 20px;
-    width: 20px;
-    background: none;
-    cursor: pointer;
-    color: black;
-    border: none;
-    font-size: 35px;
-    margin-top: -31.5%; 
-    margin-left: 725px;
-    margin-bottom: 230px;
-}
-
-.Infos h2{
     font-size: 30px;
+    pointer-events: all;
+}
+
+.botaoSetaTras {
+    margin-left: 10px;
+}
+
+.botaoSetaFrente {
+    margin-right: 10px;
+}
+
+.Infos h2 {
+    font-size: 17px;
     font-family: 'Inter';
     font-weight: 500;
     border-bottom: 1px solid #000000;
-    padding: 20px;
+    padding: 15px;
+    margin-top: -1%;
 }
 
-h3{
-    margin-bottom: 10px;
-    font-size: 37px;
+h3 {
+    font-size: 25px;
     font-family: 'Inter';
     font-weight: bolder;
+    padding: 2%;
 }
 
 .localizacao {
@@ -69,18 +89,21 @@ h3{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px; 
+    padding: 2%;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 3%;
 }
 
 .localizacao > div {
     display: flex;
     align-items: center; 
+    margin-bottom: 2%;
 }
 
 .IconeLoc {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px; 
+    width: 30px;
+    height: 30px;
+    padding: 3%;
 }
 
 .loc-infos {
@@ -88,25 +111,280 @@ h3{
     flex-direction: column;
 }
 
-.loc-infos h5{
-    font-size: 35px;
+.loc-infos h5 {
+    font-size: 18px;
     font-family: 'Inter';
     font-weight: 600;
-    margin: 0px;
 }
 
-.loc-infos h6{
-    font-size: 20px;
+.loc-infos h6 {
+    font-size: 12px;
     font-family: 'Inter';
     font-weight: 400;
-    margin: 0px;
 }
 
-.localizacao h4{
-    font-size: 35px;
+.localizacao h4 {
+    font-size: 20px;
     font-family: 'Inter';
     font-weight: 600;
-    margin: 0px;
     border-bottom: none;
 }
 
+@media (min-width: 800px) {
+    .Infos h1 {
+        font-size: 35px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        align-self: center;
+        padding: 10px;
+    }
+
+    .botaoSetaTras {
+        margin-left: 35px;
+    }
+    
+    .botaoSetaFrente {
+        margin-right: 35px;
+    }
+
+    .botaoSetaTras, 
+    .botaoSetaFrente {
+        background: none;
+        cursor: pointer;
+        color: black;
+        border: none;
+        font-size: 40px;
+        pointer-events: all;
+    }
+
+    .Infos h2 {
+        font-size: 25px;
+        font-family: 'Inter';
+        font-weight: 500;
+        border-bottom: 1px solid #000000;
+        padding: 25px;
+        margin-top: -1%;
+    }
+
+    h3 {
+        font-size: 35px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        padding: 2%;
+    }
+
+    .IconeLoc {
+        width: 45px;
+        height: 45px;
+        padding: 3%;
+    }
+
+    .loc-infos h5 {
+        font-size: 26px;
+        font-family: 'Inter';
+        font-weight: 600;
+    }
+    
+    .loc-infos h6 {
+        font-size: 18px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+    
+    .localizacao h4 {
+        font-size: 26px;
+        font-family: 'Inter';
+        font-weight: 600;
+        border-bottom: none;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .InfoService {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .Componentes{
+        margin-left: 28%;
+    }
+
+    .Infos h1 {
+        font-size: 33px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        align-self: center;
+        padding: 25px;
+    }
+
+    .arrow-button {
+        position: absolute;
+        top: 37%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);  
+        pointer-events: none;  
+    }
+
+    .botaoSetaTras {
+        margin-left: 30px;
+    }
+    
+    .botaoSetaFrente {
+        margin-right: 30px;
+    }
+
+    .botaoSetaTras, 
+    .botaoSetaFrente {
+        background: none;
+        cursor: pointer;
+        color: black;
+        border: none;
+        font-size: 38px;
+        pointer-events: all;
+    }
+
+    .Infos h2 {
+        font-size: 20px;
+        font-family: 'Inter';
+        font-weight: 500;
+        border-bottom: 1px solid #000000;
+        padding: 25px;
+        margin-top: -1%;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        padding: 2%;
+    }
+
+    .IconeLoc {
+        width: 40px;
+        height: 40px;
+        padding: 3%;
+    }
+
+    .loc-infos h5 {
+        font-size: 22px;
+        font-family: 'Inter';
+        font-weight: 600;
+    }
+    
+    .loc-infos h6 {
+        font-size: 14px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+    
+    .localizacao h4 {
+        font-size: 22px;
+        font-family: 'Inter';
+        font-weight: 600;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Componentes{
+        margin-left: 30%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .Componentes{
+        margin-left: 28%;
+    }
+
+    .Infos h1 {
+        font-size: 45px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        align-self: center;
+        padding: 25px;
+    }
+
+    .arrow-button {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);  
+        pointer-events: none;  
+    }
+
+    .botaoSetaTras {
+        margin-left: 60px;
+    }
+    
+    .botaoSetaFrente {
+        margin-right: 60px;
+    }
+
+    .botaoSetaTras, 
+    .botaoSetaFrente {
+        background: none;
+        cursor: pointer;
+        color: black;
+        border: none;
+        font-size: 50px;
+        pointer-events: all;
+    }
+
+    .Infos h2 {
+        font-size: 35px;
+        font-family: 'Inter';
+        font-weight: 500;
+        border-bottom: 1px solid #000000;
+        padding: 55px;
+        margin-top: -1%;
+    }
+
+    h3 {
+        font-size: 45px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        padding: 2%;
+    }
+
+    .IconeLoc {
+        width: 60px;
+        height: 60px;
+        padding: 3%;
+    }
+
+    .loc-infos h5 {
+        font-size: 28px;
+        font-family: 'Inter';
+        font-weight: 600;
+    }
+    
+    .loc-infos h6 {
+        font-size: 20px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+    
+    .localizacao h4 {
+        font-size: 28px;
+        font-family: 'Inter';
+        font-weight: 600;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1900px) {
+    .Componentes{
+        margin-left: 30%;
+    }
+}

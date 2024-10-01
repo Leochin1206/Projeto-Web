@@ -8,6 +8,7 @@ import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -112,18 +113,13 @@ function App() {
       <div className='Cards-section'>
         <h6>Mais recentes:</h6>
         <div className='Cards'>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Link to='/InfoService'><Card /></Link>
+          <Link to='/InfoService'><Card /></Link>
+          <Link to='/InfoService'><Card /></Link>
+          <Link to='/InfoService'><Card /></Link>
+          <Link to='/InfoService'><Card /></Link>
+          <Link to='/InfoService'><Card /></Link>
+          <Link to='/InfoService'><Card /></Link>
         </div>
       </div>
 

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.Preco{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    flex-direction: column;
+    border: 2px solid #1565C0;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.PerfilUsuario{
+    width: 90%;
+    height: 25%;
+    background-color: #B7DBF4;
+    border-radius: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 0 14px; 
+    margin: 2%; 
+  }
+  
+  .PerfilUsuario img{
+    width: 27px;
+    height: 27px;
+  
+  }
+  
+  .PerfilUsuario h5{
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .PerfilUsuario h6{
+    font-size: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .Bolinha{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: black;
+  }
+
+h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 30px;
+    padding: 5%;
+    align-self: center;
+}
+
+.SolicitarServico{
+    width: 70%;
+    height: 20%;
+    background-color: #B7DBF4;
+    border-radius: 35px;
+    border: 2px solid #1565C0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+    padding: 2%; 
+}
+
+.SolicitarServico:hover {
+    background-color: #9CCBF4; 
+    border-color: #0D47A1; 
+}
+
+h2{
+    font-family: 'Inter';
+    font-size: 140%;
+    margin: 0;
+}
+
+@media (min-width: 700px) {
+    .Preco{
+        display: flex;
+        width: 40vh;
+        height: 20vh;
+        flex-direction: column;
+        border: 2px solid #1565C0;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1%;
+    }
+
+    .PerfilUsuario{
+        width: 90%;
+        height: 20%;
+        background-color: #B7DBF4;
+        border-radius: 15px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10px; 
+        margin: 2%; 
+    }
+
+    .PerfilUsuario img{
+        width: 32px;
+        height: 32px;
+      
+    }
+
+    .PerfilUsuario h5{
+        font-size: 18px;
+        font-family: 'Inter';
+        font-weight: 700;
+        margin: 0;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 14px;
+        font-family: 'Inter';
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h1{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 37px;
+        padding: 5%;
+        align-self: center;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .Preco{
+        display: flex;
+        width: 55vh;
+        height: 25vh;
+        flex-direction: column;
+        border: 3px solid #1565C0;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1%;
+    }
+
+    .PerfilUsuario{
+        width: 90%;
+        height: 20%;
+        background-color: #B7DBF4;
+        border-radius: 15px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10px; 
+        margin: 2%; 
+    }
+
+    .PerfilUsuario img{
+        width: 45px;
+        height: 45px;
+      
+    }
+
+    .PerfilUsuario h5{
+        font-size: 24px;
+        font-family: 'Inter';
+        font-weight: 700;
+        margin: 0;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 18px;
+        font-family: 'Inter';
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h1{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 45px;
+        padding: 5%;
+        align-self: center;
+    }
+
+    h2{
+        font-family: 'Inter';
+        font-size: 30px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1900px) {
+    .Preco{
+        display: flex;
+        width: 70vh;
+        height: 30vh;
+        flex-direction: column;
+        border: 3px solid #1565C0;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1%;
+    }
+
+    .PerfilUsuario{
+        width: 90%;
+        height: 20%;
+        background-color: #B7DBF4;
+        border-radius: 15px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10px; 
+        margin: 2%; 
+    }
+
+    .PerfilUsuario img{
+        width: 55px;
+        height: 55px;
+      
+    }
+
+    .PerfilUsuario h5{
+        font-size: 30px;
+        font-family: 'Inter';
+        font-weight: 700;
+        margin: 0;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 22px;
+        font-family: 'Inter';
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h1{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 55px;
+        padding: 5%;
+        align-self: center;
+    }
+
+    h2{
+        font-family: 'Inter';
+        font-size: 35px;
+        margin: 0;
+    }
+}

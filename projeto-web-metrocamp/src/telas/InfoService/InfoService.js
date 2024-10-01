@@ -1,16 +1,38 @@
 import './InfoService.css'
-import ImagemPintura from '../../images/pintor-profissional.png'
+import ImagemPintura1 from '../../images/pintor-profissional.png';
+import ImagemPintura2 from '../../images/pintor2.png';
+import ImagemPintura3 from '../../images/pintor3.png';
+import { useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaMapMarkerAlt, FaShareAlt } from "react-icons/fa";
+import { Preco } from '../../componentes/Preco/Preco.js'
 
 export function InfoService() {
+
+    const imagens = [ImagemPintura1, ImagemPintura2, ImagemPintura3];
+    const [indiceAtual, setIndiceAtual] = useState(0);
+
+    const handlePrevImage = () => {
+        setIndiceAtual(indiceAtual === 0 ? imagens.length - 1 : indiceAtual - 1);
+    };
+
+    const handleNextImage = () => {
+        setIndiceAtual(indiceAtual === imagens.length - 1 ? 0 : indiceAtual + 1);
+    };
+
     return (
         <div className="InfoService">
             <div className="Infos">
                 <h1>Pintura de Paredes</h1>
-                <img src={ImagemPintura} alt='' className='ImageInfoPost' />
-                <button className='botaoSetaTras'><IoIosArrowBack /></button>
-                <button className='botaoSetaFrente'><IoIosArrowForward /></button>
+
+                <div className="slider">
+                    <img src={imagens[indiceAtual]} alt='' className="ImageInfoPost" />
+                </div>
+
+                <div className='arrow-button'>
+                    <button className='botaoSetaTras' onClick={handlePrevImage}><IoIosArrowBack /></button>
+                    <button className='botaoSetaFrente' onClick={handleNextImage}><IoIosArrowForward /></button>
+                </div>
 
                 <h2>
                     Pinto sua parede da cor que você quiser aqui na região de
@@ -25,7 +47,7 @@ export function InfoService() {
                         <FaMapMarkerAlt className='IconeLoc' />
                         <div className='loc-infos'>
                             <h5>Campinas</h5>
-                            <h6>Campinas-SP-13000-000</h6>
+                            <h6>Campinas-SP</h6>
                         </div>
                     </div>
                     <div>
@@ -37,7 +59,7 @@ export function InfoService() {
             </div>
 
             <div className="Componentes">
-                {/* Inserir componente preço aqui */}
+                <Preco />
 
                 {/* Inserir componente avaliação aqui */}
             </div>
