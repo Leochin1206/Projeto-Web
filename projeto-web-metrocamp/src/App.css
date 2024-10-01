@@ -349,7 +349,7 @@
 }
 
 /* Laptops Pequenos (1025px - 1280px) */
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   .area-botao-criar {
     width: 80%;
   }
@@ -366,6 +366,53 @@
     min-width: 200px;
     height: 350px;
   }
+
+  .filtro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo da div */
+    margin-bottom: 2rem; /* Espaço entre os filtros e o restante do conteúdo */
+  }
+
+  .filtro h1 {
+    font-size: 27px;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-top: 1.875rem;
+    margin-bottom: 1.5rem; /* Ajusta o espaçamento abaixo da frase */
+  }
+
+  .filtro .botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os botões em uma linha */
+    flex-wrap: nowrap; /* Garante que os botões fiquem em uma única linha */
+    overflow-x: unset; /* Remove a rolagem horizontal */
+    gap: 1.7rem; /* Adiciona espaçamento entre os botões */
+  }
+
+  .filtro .botoes .conjunto {
+    margin-right: 0; /* Remove margem lateral desnecessária */
+    text-align: center; /* Centraliza o texto dos botões */
+  }
+
+  .filtro .botoes .conjunto button {
+    width: 3.5rem; /* Tamanho dos botões */
+    height: 3.5rem;
+    border-radius: 0.625rem;
+    background: none;
+    border: 0.063rem solid #dfdddd;
+    cursor: pointer;
+    box-shadow: 0.375rem 0.313rem 0.5rem rgba(0, 0, 0, 0.2);
+    font-size: 1.563rem;
+  }
+
+  .filtro .botoes .conjunto h6 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: 'Inter';
+    margin-top: 0.313rem;
+}
 }
 
 /* Desktops Médios (1281px - 1440px) */

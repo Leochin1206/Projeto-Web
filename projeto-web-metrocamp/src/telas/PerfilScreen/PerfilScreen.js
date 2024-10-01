@@ -6,7 +6,7 @@ import ImagemPerfil from '../../images/icone.png'
 
 export function PerfilScreen() {
     return (
-        <div>
+        <div className='todosConteudos'>
             <div className="CentralizarCards">
                 <div className="perfilDetalhadoDontainer">
                     <div className="perfilDados">
@@ -74,6 +74,10 @@ export function PerfilScreen() {
                 </div>
 
                 <div className="CentralizarCardPerfil">
+                    <CardPerfil />
+                    <CardPerfil />
+                    <CardPerfil />
+                    <CardPerfil />
                     <CardPerfil />
                     <CardPerfil />
                     <CardPerfil />

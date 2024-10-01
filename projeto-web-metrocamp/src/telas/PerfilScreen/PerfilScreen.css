@@ -206,3 +206,40 @@ p {
     align-items: center;
 }
 
+@media (min-width: 800px){
+    .perfilDetalhadoDontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: min-content;
+        width: 100%;
+        border: 2px solid #1565C0;
+        border-radius: 15px;
+        padding: 20px;
+        background-color: #fff;
+        font-family: 'Inter', sans-serif;
+        margin-top: -203%
+    }
+    
+    .perfilDados {
+        margin: 0;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000000;
+        width: 100%;
+    }
+
+    .CentralizarCards{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 3%;
+        width: 100%;
+    }
+
+    .todosConteudos{
+        display: flex;
+        flex-direction: row;
+    }
+};
