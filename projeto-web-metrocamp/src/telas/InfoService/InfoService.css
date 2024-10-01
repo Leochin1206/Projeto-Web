@@ -384,7 +384,82 @@ h3 {
 }
 
 @media (min-width: 1900px) {
-    .Componentes{
-        margin-left: 30%;
+    .Infos h1 {
+        font-size: 45px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        align-self: center;
+        padding: 25px;
+    }
+
+    .arrow-button {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);  
+        pointer-events: none;  
+    }
+
+    .botaoSetaTras {
+        margin-left: 60px;
+    }
+    
+    .botaoSetaFrente {
+        margin-right: 60px;
+    }
+
+    .botaoSetaTras, 
+    .botaoSetaFrente {
+        background: none;
+        cursor: pointer;
+        color: black;
+        border: none;
+        font-size: 50px;
+        pointer-events: all;
+    }
+
+    .Infos h2 {
+        font-size: 35px;
+        font-family: 'Inter';
+        font-weight: 500;
+        border-bottom: 1px solid #000000;
+        padding: 55px;
+        margin-top: -1%;
+    }
+
+    h3 {
+        font-size: 45px;
+        font-family: 'Inter';
+        font-weight: bolder;
+        padding: 2%;
+    }
+
+    .IconeLoc {
+        width: 60px;
+        height: 60px;
+        padding: 3%;
+    }
+
+    .loc-infos h5 {
+        font-size: 28px;
+        font-family: 'Inter';
+        font-weight: 600;
+    }
+    
+    .loc-infos h6 {
+        font-size: 20px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+    
+    .localizacao h4 {
+        font-size: 28px;
+        font-family: 'Inter';
+        font-weight: 600;
+        border-bottom: none;
     }
 }

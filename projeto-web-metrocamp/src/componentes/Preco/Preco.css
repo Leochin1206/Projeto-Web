@@ -204,6 +204,68 @@ h2{
     }
 }
 
+@media (min-width: 1500px) {
+    .Preco{
+        display: flex;
+        width: 50vw;
+        height: 40vh;
+        margin: 0;
+        flex-direction: column;
+        border: 3px solid #1565C0;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1%;
+    }
+
+    .PerfilUsuario{
+        width: 90%;
+        height: 20%;
+        background-color: #B7DBF4;
+        border-radius: 15px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10px; 
+        margin: 2%; 
+    }
+
+    .PerfilUsuario img{
+        width: 55px;
+        height: 55px;
+      
+    }
+
+    .PerfilUsuario h5{
+        font-size: 30px;
+        font-family: 'Inter';
+        font-weight: 700;
+        margin: 0;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 22px;
+        font-family: 'Inter';
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h1{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 55px;
+        padding: 5%;
+        align-self: center;
+    }
+
+    h2{
+        font-family: 'Inter';
+        font-size: 35px;
+        margin: 0;
+    }
+}
+
 @media (min-width: 1900px) {
     .Preco{
         display: flex;
