@@ -9,6 +9,12 @@
     padding: 3%;
   }
   
+  .Perfil{
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
   .PerfilUsuario img{
     width: 38px;
     height: 38px;

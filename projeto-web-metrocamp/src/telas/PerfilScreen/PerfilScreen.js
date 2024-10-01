@@ -80,8 +80,6 @@ export function PerfilScreen() {
                     <CardPerfil />
                     <CardPerfil />
                     <CardPerfil />
-                    <CardPerfil />
-                    <CardPerfil />
                 </div>
             </div>
         </div>
