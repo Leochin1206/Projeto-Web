@@ -3,12 +3,18 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .PagPrincipal h1{
     font-size: 25px;
     margin-top: 3%;
-    margin-bottom: 3%;
+}
+
+.gapImgTitle{
+    flex-direction: column;
+    align-content: center;
+    gap: 10%;
 }
 
 .ImgCriar{
@@ -62,6 +68,66 @@ textarea {
             border-radius: 10px;
         }
 
+label[id="nomeTitulo"],
+textarea{
+            background-color: red;
+        }
+
+        /* Div da Lista e da Precificacao*/
+        .cidadePreco {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            height: 70%;
+            width: 50%;
+            gap: 10%;
+            background-color: green;
+        }
+
+        /* Estilização da Lista de cidades */
+        .cidadeLista {
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .tituloLista {
+            font-family: 'Inter', sans-serif !important;
+            font-size: 18px !important;
+        }
+
+        .selectCampo {
+            border-radius: 5px; 
+            border-color: #1565C0;
+            border-width: 2px;
+            width: 65%;
+            height: 20%;
+            font-family: 'Inter';
+            font-size: 14px;
+            appearance: none;
+        }
+
+        .selectCampo:focus {   /* Muda a cor da borda quando ta em foco*/
+            outline: none;
+            border-color: #1565C0;
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        .selectCampo option {
+            border-color: #1565C0;
+            border-width: 2px;
+            background-color: white;
+            color: #1565C0;
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        .campoSelected {
+            font-style: bold;
+            font-size: 13px;
+            border-radius: none;
+        }
+        /* Fim da lisda de cidades*/
+
 
         .pricing-section {
             display: flex;
@@ -95,7 +161,19 @@ textarea {
             width: 70px;
             padding: 5px;
             font-size: 14px;
-            color: grey;
+            font-family: 'Inter', sans-serif !important;
+            border-radius: 12%;
+            border-color: #1565C0;
+        }
+
+        .pricing-inputs input[type='text']:focus {
+            outline: none;
+            width: 70px;
+            padding: 5px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif !important;
+            border-radius: 12%;
+            border-color: #1565C0 !important;
         }
 
         input[type="checkbox"] {
