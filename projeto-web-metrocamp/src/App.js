@@ -113,13 +113,13 @@ function App() {
       <div className='Cards-section'>
         <h6>Mais recentes:</h6>
         <div className='Cards'>
-          <Link to='/InfoService'><Card /></Link>
-          <Link to='/InfoService'><Card /></Link>
-          <Link to='/InfoService'><Card /></Link>
-          <Link to='/InfoService'><Card /></Link>
-          <Link to='/InfoService'><Card /></Link>
-          <Link to='/InfoService'><Card /></Link>
-          <Link to='/InfoService'><Card /></Link>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
 
