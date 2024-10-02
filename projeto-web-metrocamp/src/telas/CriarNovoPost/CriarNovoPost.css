@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
 }
 
 .PagPrincipal h1{
@@ -15,6 +16,7 @@
     flex-direction: column;
     align-content: center;
     gap: 10%;
+    margin-top: 5%;
 }
 
 .ImgCriar{
@@ -27,12 +29,10 @@
 
 .AcertarForms{
     display: flex;
-    flex: 1;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
+    justify-content: flex-start;
     width:120%;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .camposCriarPost{
@@ -41,7 +41,6 @@
     flex-direction: column;
     justify-content: center;
     width:100%;
-    align-self: end;
     margin-top: 1%;
 }
 
@@ -54,7 +53,8 @@ label{
 
 input[id="Titulo"],
 textarea {
-            width: 45%;
+            width: 40%;
+            height: 2%;
             padding: 2%;
             border: 2px solid #1565C0;
             border-radius: 10px;
@@ -62,7 +62,8 @@ textarea {
 
 input[id="Descricao"],
 textarea {
-            width: 45%;
+            width: 40%;
+            height: 2%;
             padding: 2%;
             border: 2px solid #1565C0;
             border-radius: 10px;
@@ -70,24 +71,30 @@ textarea {
 
 label[id="nomeTitulo"],
 textarea{
-            background-color: red;
+            margin-right: 39%;
         }
+
+label[id="nomeDescricao"],
+textarea{
+            margin-right: 37%;
+        }
+
 
         /* Div da Lista e da Precificacao*/
         .cidadePreco {
             display: flex;
             align-content: center;
             justify-content: space-between;
-            height: 70%;
+            height: 200%;
             width: 50%;
-            gap: 10%;
-            background-color: green;
+            gap: 5%;
         }
 
         /* Estilização da Lista de cidades */
         .cidadeLista {
-            justify-content: center;
-            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 200%;
         }
 
         .tituloLista {
@@ -133,8 +140,8 @@ textarea{
             display: flex;
             flex-direction: column;
             gap: 10px;
-            margin: 20px;
             align-items: start;
+            padding-top: 1%;
         }
 
         .pricing-options {
@@ -180,4 +187,38 @@ textarea{
             width: 16px;
             height: 16px;
         }
+
+
+        .divBotao {
+            display: flex;
+            justify-content: center;
+            padding: 2%;
+            width: 80%;
+        }
+
+        .botaoPost {
+            background-color: #1565C0;
+            color: white;
+            font-family: 'Inter';
+            font-size: 15px;
+            font-weight: 700;
+            height: 180%;
+            width: 15%;
+            border-radius: 10px;
+            border: none;
+            justify-content: center;
+        }
           
+        @media screen and (max-width: 768px) {
+            
+            .PagPrincipal {
+                height: 90vh;
+                width: 90vw;
+                margin: 0;
+            }
+            
+            .ImgCriar{
+                height: 30vh;
+                width: 30vw;
+            }
+        }

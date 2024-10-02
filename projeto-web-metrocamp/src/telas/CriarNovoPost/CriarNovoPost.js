@@ -29,7 +29,7 @@ export function CriarNovoPost(){
                         )
             case "orcamento":
                 return (<div id="orcamentoInput" className="pricing-inputs hidden">
-                            <input type="text" placeholder="Observação"></input>
+                            <input type="text" placeholder="OBS:"></input>
                         </div>                     
                         )
             default:
@@ -52,7 +52,7 @@ export function CriarNovoPost(){
                 </span>
 
                 <span className="camposCriarPost">
-                    <label for="email">Descrição:</label>
+                    <label for="email" id='nomeDescricao'>Descrição:</label>
                     <input type="text" name="Descricao" id="Descricao" placeholder="Crie uma descrição para o seu serviço" required></input>
                 </span>
             </div>
@@ -60,7 +60,7 @@ export function CriarNovoPost(){
             <div className='cidadePreco'>       
                     {/*Lista de cidades que vão abranger os serviços*/}
                 <div className="cidadeLista">
-                    <h1 className='tituloLista'>Selecione sua cidade:</h1>
+                    <h1 className='tituloLista'>Selecione a cidade:</h1>
                     <select className='selectCampo' value={selectedOption} onChange={handleSelectchange}>
                         <option value="">Selecione...</option>
                         <option value="Americana">Americana</option>
@@ -95,6 +95,9 @@ export function CriarNovoPost(){
                     {optionSelected(isSelected)}
 
                 </div>
+            </div>
+            <div className='divBotao'>
+            <button type="submit" className="botaoPost">Enviar</button>
             </div>
         </div>
     );
