@@ -29,10 +29,7 @@ export function InfoService() {
                     <img src={imagens[indiceAtual]} alt='' className="ImageInfoPost" />
                 </div>
 
-                <div className='arrow-button'>
-                    <button className='botaoSetaTras' onClick={handlePrevImage}><IoIosArrowBack /></button>
-                    <button className='botaoSetaFrente' onClick={handleNextImage}><IoIosArrowForward /></button>
-                </div>
+               
 
                 <h2>
                     Pinto sua parede da cor que você quiser aqui na região de

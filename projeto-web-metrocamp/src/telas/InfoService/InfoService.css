@@ -9,7 +9,7 @@
 .Infos {
     display: flex;
     flex-direction: column;
-    position: relative;
+   
 }
 
 .Infos h1 {
@@ -21,7 +21,7 @@
 }
 
 .slider {
-    position: relative;
+   
     overflow: hidden;
     align-self: center;
     display: flex;
@@ -34,12 +34,11 @@
     align-self: center;
     width: 100%;
     height: auto;
-    position: relative;
     transition: transform 0.5s ease-in-out;
 }
 
 .arrow-button {
-    position: absolute;
+    
     top: 37%;
     left: 0;
     right: 0;
@@ -221,7 +220,7 @@ h3 {
     }
 
     .arrow-button {
-        position: absolute;
+        
         top: 37%;
         left: 0;
         right: 0;
@@ -312,7 +311,7 @@ h3 {
     }
 
     .arrow-button {
-        position: absolute;
+        
         top: 40%;
         left: 0;
         right: 0;
@@ -393,7 +392,7 @@ h3 {
     }
 
     .arrow-button {
-        position: absolute;
+        
         top: 40%;
         left: 0;
         right: 0;
