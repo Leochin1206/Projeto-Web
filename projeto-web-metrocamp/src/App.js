@@ -8,7 +8,6 @@ import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 function App() {
 

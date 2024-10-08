@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.CentralizarCP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.CompletePerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1565C0;
+    border-radius: 20px;
+    margin-top: 2%;
+    width: 25%;
+    height: 67px;
+}
+
+.CompletePerfil h1{
+    color: white;
+    font-size: 25px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    border: 2px solid #1565C0;
+    border-radius: 20px;
+    padding-top: 2%;
+}
+
+.camposPerfilCP {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+label{
+    color: black;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+input[id="nomeCP"], input[id="telefoneCP"], textarea {
+    width: 85%;
+    padding: 2%;
+    border: 2px solid #1565C0;
+    border-radius: 10px;
+}
+
+.react-select__control {
+    width: 85%;
+    padding: 2%;
+    border: 2px solid #1565C0;
+    border-radius: 10px;
+}
+
+.btnSalvar button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1565C0;
+    color: white;
+    font-family: 'Inter';
+    font-size: 35px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 7%;
+}
+
