@@ -34,3 +34,4 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 - **npm install**
 - **npm install react-router-dom**
 - **npm install react-icons --save**
+- **npm install react-select**
