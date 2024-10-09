@@ -3,6 +3,7 @@ import { Avaliacao } from '../../componentes/Avaliacao/Avaliacao';
 import Select from 'react-select';
 import { useState } from 'react';
 
+
 export function ComplementoPerfil() {
     // Gerenciamento de estado para cidade e profissões
     const [selectedCity, setSelectedCity] = useState(null);
