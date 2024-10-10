@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .Prestado{
-    width: 30%;
-    height: 70px;
+    width: 40vw;
+    height: 4vh;
     background-color: #1565C0;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,28 @@
 
 h1{
     font-family: 'Inter';
-    font-size: 250%;
+    font-size: 150%;
     color: white;
-    margin: 0;
+}
+
+@media (min-width: 900px){
+    .Prestado{
+        width: 30vw;
+        height: 6vh;
+    }
+
+    h1{
+        font-size: 200%
+    }
+}
+
+@media (min-width: 1900px){
+    .Prestado{
+        width: 25vw;
+        height: 8vh;
+    }
+
+    h1{
+        font-size: 250%
+    }
 }
