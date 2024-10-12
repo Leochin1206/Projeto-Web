@@ -8,10 +8,10 @@ import MainLayout from "./telas/Cadastro/MainLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Login } from './telas/Login/Login';
 import { PerfilScreen } from './telas/PerfilScreen/PerfilScreen';
-import { Clipboard } from './telas/Clipboard/Clipboard';
 import { CriarNovoPost } from './telas/CriarNovoPost/CriarNovoPost';
 import { InfoService } from './telas/InfoService/InfoService';
 import { ClipBoardRequisitado } from './telas/ClipboardRequisitado/ClipBoardRequisitado.js';
+import { ClipBoardPrestado } from './telas/ClipboardPrestado/ClipBoardPrestado.js';
 
 const Routing = () => (
   <Router>
@@ -20,11 +20,11 @@ const Routing = () => (
         <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
         <Route path="/Cadastro" element={<Cadastro />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Clipboard" element={<Clipboard />} />
         <Route path="/Perfil" element={<PerfilScreen />} />
         <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
         <Route path="/InfoService" element={<InfoService />} />
         <Route path="/ClipBoardRequisitado" element={<ClipBoardRequisitado />} />
+        <Route path="/ClipBoardPrestado" element={<ClipBoardPrestado />} />
         {/* Adicione outras rotas conforme necessário */}
       </Route>
     </Routes>

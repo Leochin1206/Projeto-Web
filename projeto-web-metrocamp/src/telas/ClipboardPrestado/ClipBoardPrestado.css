@@ -1,0 +1,156 @@
+.Clip-board{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.Container-Requisitado,
+.Container-Andamento,
+.Container-Finalizado{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 30vh;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.Requisitado,
+.Andamento,
+.Finalizado{
+    width: 50%;
+    height: 18%;
+    background-color: #B7DBF4;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.Requisitado h1,
+.Andamento h1,
+.Finalizado h1{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.Cards,
+.Cards-Finalizado{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.Cards::-webkit-scrollbar {
+    display: none; 
+}
+.Cards-Finalizado::-webkit-scrollbar {
+    display: none; 
+}
+
+@media (min-width: 600px){
+    .Requisitado,
+    .Andamento,
+    .Finalizado{
+        width: 40%;
+        margin-bottom: 15px;
+    }
+
+    .Container-Requisitado,
+    .Container-Andamento,
+    .Container-Finalizado{
+    margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 900px){
+    .Buttons{
+        padding: 30px;
+    }
+    
+    .Container{
+        flex-direction: row;
+    }
+    
+    .Container-Requisitado,
+    .Container-Andamento,
+    .Container-Finalizado{
+        align-items: center;
+        width: 33vw;
+        height: 100vh;
+        gap: 5px;
+        margin-bottom: 0px;
+    }
+    
+    .Requisitado,
+    .Andamento,
+    .Finalizado{
+        width: 95%;
+        height: 6%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    
+    .Requisitado h1,
+    .Andamento h1,
+    .Finalizado h1{
+        font-size: 25px;
+    }
+    
+    .Cards,
+    .Cards-Finalizado{
+        flex-direction: column;
+        align-items: center;
+        width: 33vw;
+        height: 100vh;
+        gap: 30px;
+        overflow-x: none;
+        scroll-snap-type: none;
+    }
+
+    .Cards{
+        border-right: solid 2px #1565C0;    
+    }
+}
+
+@media (min-width: 1900px){
+.Requisitado,
+.Andamento,
+.Finalizado{
+    width: 90%;
+    height: 8%;   
+}
+
+.Requisitado h1,
+.Andamento h1,
+.Finalizado h1{
+    font-size: 35px;
+}    
+}

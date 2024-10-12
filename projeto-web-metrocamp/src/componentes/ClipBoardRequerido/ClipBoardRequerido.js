@@ -5,10 +5,10 @@ import { CiClock1 } from "react-icons/ci";
 
 
 export function ClipBoardRequerido() {
-    return(
+    return (
         <>
-            <div className="Funcao">
-                <FaUserCircle id="IconeUsuario"/>
+            <div className="CardRequirido">
+                <FaUserCircle id="IconeUsuario" />
 
                 <h6>Renato Willian</h6>
 
@@ -32,6 +32,6 @@ export function ClipBoardRequerido() {
 
                 <div className="Check"><CiClock1 /></div>
             </div>
-        </>        
-);
+        </>
+    );
 }

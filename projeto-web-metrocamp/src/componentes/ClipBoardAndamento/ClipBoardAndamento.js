@@ -5,10 +5,10 @@ import { FaHammer } from "react-icons/fa6";
 
 
 export function ClipBoardAndamento() {
-    return(
+    return (
         <>
-            <div className="Funcao">
-                <FaUserCircle id="IconeUsuario"/>
+            <div className="CardAndamento">
+                <FaUserCircle id="IconeUsuario" />
 
                 <h6>Renato Willian</h6>
 
@@ -21,11 +21,11 @@ export function ClipBoardAndamento() {
                     <FaRegStar />
                 </div>
 
-                <div className='Reboco'>
+                <div className='Finalizar'>
                     <button>Finalizar Serviço</button>
                 </div>
                 <div className="Check"><FaHammer /></div>
             </div>
-        </>        
-);
+        </>
+    );
 }

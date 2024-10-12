@@ -1,15 +1,17 @@
-import './ClipBoardRequisitado.css'
+import './ClipBoardPrestado.css'
 
 import { CardPrancheta } from '../../componentes/CardPrancheta/CardPrancheta.js'
 import { BotaoMaior } from '../../componentes/BotaoMaior/BotaoMaior.js'
+import { ClipBoardAndamento } from '../../componentes/ClipBoardAndamento/ClipBoardAndamento.js'
+import { ClipBoardRequerido } from '../../componentes/ClipBoardRequerido/ClipBoardRequerido.js'
 
-export function ClipBoardRequisitado() {
+export function ClipBoardPrestado() {
     return (
         <div className='Clip-board'>
 
             <div className='Buttons'>
-                <BotaoMaior titulo="Requisitado" />
-                <BotaoMaior titulo="Prestado" cor="#B7DBF4" font="#000000" rota="/ClipBoardPrestado" />
+                <BotaoMaior titulo="Requisitado" cor="#B7DBF4" font="#000000" rota="/ClipBoardRequisitado" />
+                <BotaoMaior titulo="Prestado" />
             </div>
 
             <div className='Container'>
@@ -20,8 +22,7 @@ export function ClipBoardRequisitado() {
                     </div>
 
                     <div className='Cards'>
-                        <CardPrancheta />
-                        <CardPrancheta />
+                        <ClipBoardRequerido />
                     </div>
                 </div>
 
@@ -31,8 +32,7 @@ export function ClipBoardRequisitado() {
                     </div>
 
                     <div className='Cards'>
-                        <CardPrancheta />
-                        <CardPrancheta />
+                        <ClipBoardAndamento />
                     </div>
                 </div>
 

@@ -22,6 +22,7 @@ export function CardPrancheta() {
             <div className='Reboco'>
                 <h6>Reboco de Parede</h6>
             </div>
+
             <div className="Check"><IoMdCheckmarkCircleOutline /></div>
         </div>
     )
