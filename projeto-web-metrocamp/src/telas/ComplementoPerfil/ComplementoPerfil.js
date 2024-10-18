@@ -76,6 +76,7 @@ export function ComplementoPerfil() {
                 <button>
                     <img src={ImagemPerfil} alt="" className="imagem-perfil" />
                 </button>
+                <h4>Foto do Perfil</h4>
             </div>
 
             <div className='CamposPerfil'>
