@@ -24,6 +24,9 @@ const Routing = () => (
         <Route path="/Perfil" element={<PerfilScreen />} />
         <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
         <Route path="/InfoService" element={<InfoService />} />
+        <Route path="/ClipBoardRequisitado" element={<ClipBoardRequisitado />} />
+        <Route path="/ClipBoardPrestado" element={<ClipBoardPrestado />} />
+        <Route path="/CompletandoPerfil" element={<ComplementoPerfil />} />
         {/* Adicione outras rotas conforme necessário */}
       </Route>
     </Routes>
