@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+
+.ComponenteAva {
+    width: 510px;
+    height: 520px;
+    background-color: white;
+    border-radius: 15px; 
+    border: 5px solid #B7DBF4; 
+    box-sizing: border-box; 
+    margin: 20px; 
+    display: flex;
+    flex-direction: column; /* coluna */
+    align-items: center; /* horizontal */
+    justify-content: center; /* vertical */
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+h1{
+    font-size: 25px;
+    font-family: 'Inter';
+    margin: 0;
+}
+
+h5{
+    font-size: 15px;
+    font-family: 'Inter';
+    margin: 0 10px;
+}
+
+h6{
+    font-size: 12px;
+    font-family: 'Inter';
+    margin: 0 0 0 10px;
+}
+
+.EstrelaIcon{
+    display: flex;
+    gap: 3px;
+    margin-bottom: 40px;
+}
+
+.EstrelaIcon img{
+    width: 23px;
+    min-height: 23px;
+}
+
+.EstrelaIconSmall{
+    display: flex;
+    gap: 2px;
+}
+
+.EstrelaIconSmall img{
+    width: 10px;
+    height: 10px;
+}
+
+.Avaliacao {
+    width: 460px;
+    background-color: #B7DBF4;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.IconeAva{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.icone {
+    width: 30px; 
+    height: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.Bolinha {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: black;
+    margin: 5px 0; 
+}
+
+.descricao {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px; 
+}

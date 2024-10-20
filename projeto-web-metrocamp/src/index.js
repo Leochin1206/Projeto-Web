@@ -12,6 +12,7 @@ import { CriarNovoPost } from './telas/CriarNovoPost/CriarNovoPost';
 import { InfoService } from './telas/InfoService/InfoService';
 import { ClipBoardRequisitado } from './telas/ClipboardRequisitado/ClipBoardRequisitado.js';
 import { ClipBoardPrestado } from './telas/ClipboardPrestado/ClipBoardPrestado.js';
+import { ComplementoPerfil } from './telas/ComplementoPerfil/ComplementoPerfil';
 
 const Routing = () => (
   <Router>
@@ -23,8 +24,6 @@ const Routing = () => (
         <Route path="/Perfil" element={<PerfilScreen />} />
         <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
         <Route path="/InfoService" element={<InfoService />} />
-        <Route path="/ClipBoardRequisitado" element={<ClipBoardRequisitado />} />
-        <Route path="/ClipBoardPrestado" element={<ClipBoardPrestado />} />
         {/* Adicione outras rotas conforme necessário */}
       </Route>
     </Routes>

@@ -124,14 +124,14 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  overflow-x: auto;  /* Adiciona barra de rolagem horizontal */
-  white-space: nowrap;  /* Garante que os botões fiquem em uma linha */
+  overflow-x: auto;  
+  white-space: nowrap;  
   padding: 1rem;
 }
 
 .filtro .botoes .conjunto {
-  display: inline-block;  /* Garante que os botões fiquem lado a lado */
-  margin-right: 1rem;  /* Espaçamento entre os botões */
+  display: inline-block;  
+  margin-right: 1rem;  
 }
 
 .filtro .botoes .conjunto h6{
@@ -179,24 +179,25 @@
 
 /* Celulares Pequenos (320px - 480px) */
 @media (max-width: 480px) {
+
   .area-botao-criar {
     width: 95%;
   }
 
   .botao-criar {
-    width: 50%; /* Deixar os botões maiores */
+    width: 50%; 
   }
 
   .filtro h1 {
-    font-size: 1.5rem; /* Diminuir tamanho do texto */
+    font-size: 1.5rem; 
   }
 
   .filtro .botoes .conjunto h6 {
-    font-size: 0.65rem; /* Ajustar tamanho do texto */
+    font-size: 0.65rem; 
   }
 
   .Cards > * {
-    min-width: 150px; /* Ajustar tamanho dos cards */
+    min-width: 150px; 
     height: 300px;
   }
 }
@@ -230,8 +231,8 @@
   .filtro {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo da div */
-    margin-bottom: 2rem; /* Espaço entre os filtros e o restante do conteúdo */
+    align-items: center; 
+    margin-bottom: 2rem; 
   }
 
   .filtro h1 {
@@ -239,25 +240,25 @@
     font-family: 'Inter';
     font-weight: bold;
     margin-top: 1.875rem;
-    margin-bottom: 1.5rem; /* Ajusta o espaçamento abaixo da frase */
+    margin-bottom: 1.5rem; 
   }
 
   .filtro .botoes {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centraliza os botões em uma linha */
-    flex-wrap: nowrap; /* Garante que os botões fiquem em uma única linha */
-    overflow-x: unset; /* Remove a rolagem horizontal */
-    gap: 0.8rem; /* Adiciona espaçamento entre os botões */
+    justify-content: center; 
+    flex-wrap: nowrap; 
+    overflow-x: unset; 
+    gap: 0.8rem; 
   }
 
   .filtro .botoes .conjunto {
-    margin-right: 0; /* Remove margem lateral desnecessária */
-    text-align: center; /* Centraliza o texto dos botões */
+    margin-right: 0; 
+    text-align: center; 
   }
 
   .filtro .botoes .conjunto button {
-    width: 3rem; /* Tamanho dos botões */
+    width: 3rem; 
     height: 3rem;
     border-radius: 0.625rem;
     background: none;
@@ -279,8 +280,8 @@
   .filtro {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo da div */
-    margin-bottom: 2rem; /* Espaço entre os filtros e o restante do conteúdo */
+    align-items: center; 
+    margin-bottom: 2rem; 
   }
 
   .filtro h1 {
@@ -288,25 +289,25 @@
     font-family: 'Inter';
     font-weight: bold;
     margin-top: 1.875rem;
-    margin-bottom: 1.5rem; /* Ajusta o espaçamento abaixo da frase */
+    margin-bottom: 1.5rem; 
   }
 
   .filtro .botoes {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centraliza os botões em uma linha */
-    flex-wrap: nowrap; /* Garante que os botões fiquem em uma única linha */
-    overflow-x: unset; /* Remove a rolagem horizontal */
-    gap: 1.2rem; /* Adiciona espaçamento entre os botões */
+    justify-content: center; 
+    flex-wrap: nowrap; 
+    overflow-x: unset; 
+    gap: 1.2rem; 
   }
 
   .filtro .botoes .conjunto {
-    margin-right: 0; /* Remove margem lateral desnecessária */
-    text-align: center; /* Centraliza o texto dos botões */
+    margin-right: 0; 
+    text-align: center; 
   }
 
   .filtro .botoes .conjunto button {
-    width: 3.4rem; /* Tamanho dos botões */
+    width: 3.4rem; 
     height: 3.4rem;
     border-radius: 0.625rem;
     background: none;
@@ -321,6 +322,62 @@
     font-weight: 500;
     font-family: 'Inter';
     margin-top: 0.313rem;
+  }
+
+  .button-area{
+    display: flex;
+    width: calc(100% - 120px);
+    gap: 30px;
+    padding: 0 60px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .area-botao-criar {
+    background-color: #1565c0;
+    border-radius: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;
+  }
+  
+  .area-botao-criar h1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin: 0.625rem;
+  }
+  
+  .area-botao-criar h5 {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Inter';
+    margin: 0rem 0.625rem 0.313rem 0.625rem;
+  }
+  
+  .botao-criar {
+    background-color: #ffffff;
+    border-radius: 1.875rem;
+    width: 35%;
+    height: 150%;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin: 0.625rem;
+  }
+  
+  .botao-criar button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Inter';
+    cursor: pointer;
+    width: 100%;
   }
 }
 
@@ -370,8 +427,8 @@
   .filtro {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo da div */
-    margin-bottom: 2rem; /* Espaço entre os filtros e o restante do conteúdo */
+    align-items: center; 
+    margin-bottom: 2rem; 
   }
 
   .filtro h1 {
@@ -379,25 +436,25 @@
     font-family: 'Inter';
     font-weight: bold;
     margin-top: 1.875rem;
-    margin-bottom: 1.5rem; /* Ajusta o espaçamento abaixo da frase */
+    margin-bottom: 1.5rem; 
   }
 
   .filtro .botoes {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centraliza os botões em uma linha */
-    flex-wrap: nowrap; /* Garante que os botões fiquem em uma única linha */
-    overflow-x: unset; /* Remove a rolagem horizontal */
-    gap: 1.7rem; /* Adiciona espaçamento entre os botões */
+    justify-content: center; 
+    flex-wrap: nowrap; 
+    overflow-x: unset; 
+    gap: 1.7rem; 
   }
 
   .filtro .botoes .conjunto {
-    margin-right: 0; /* Remove margem lateral desnecessária */
-    text-align: center; /* Centraliza o texto dos botões */
+    margin-right: 0; 
+    text-align: center; 
   }
 
   .filtro .botoes .conjunto button {
-    width: 3.5rem; /* Tamanho dos botões */
+    width: 3.5rem;
     height: 3.5rem;
     border-radius: 0.625rem;
     background: none;
@@ -433,7 +490,7 @@
 /* Desktops Grandes (1441px - 1920px) */
 @media (max-width: 1920px) {
   .area-botao-criar {
-    width: 70%;
+    width: 480px;
   }
 
   .botao-criar {

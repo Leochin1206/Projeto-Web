@@ -3,7 +3,6 @@ import ImagemPintura1 from '../../images/pintor-profissional.png';
 import ImagemPintura2 from '../../images/pintor2.png';
 import ImagemPintura3 from '../../images/pintor3.png';
 import { useState } from 'react';
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaMapMarkerAlt, FaShareAlt } from "react-icons/fa";
 import { Preco } from '../../componentes/Preco/Preco.js'
 
