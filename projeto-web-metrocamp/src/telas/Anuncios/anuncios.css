@@ -1,0 +1,257 @@
+.Anuncios{
+    width:430px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.Anuncios h1{
+    display: flex;
+    align-self: flex-start;
+    font-size: 25px;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.Container-anuncios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.Filtro h2{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10%;
+    margin-left: 6px;
+}
+
+.Filtro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    width: 30%;
+    border-right: solid 2px black;
+}
+
+.Selectlist{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 14px;
+}
+
+label {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Posted-adds{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+@media (min-width: 300px) and (max-width: 349px){
+
+    .Anuncios{
+        width: 300px;
+        height: min-content;
+    }
+
+    .Posted-adds{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .Filtro{
+        margin-top: 3%;
+        width: 40%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 399px){
+
+    .Anuncios{
+        width: 350px;
+        height: min-content;
+    }
+
+    .Posted-adds{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .Filtro{
+        margin-top: 3%;
+        width: 40%;
+    }
+}
+
+@media (min-width: 500px){
+    .Anuncios{
+        width: 500px;
+        height: min-content;
+    }
+
+    .Posted-adds{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .Filtro{
+        margin-top: 3%;
+        width: 30%;
+    }
+}
+
+@media (min-width: 600px){
+    .Anuncios{
+        width: 600px;
+        height: min-content;
+    }
+
+    .Posted-adds{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .Filtro{
+        margin-top: 3%;
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 700px){
+    .Anuncios{
+        width: 700px;
+        height: min-content;
+    }
+
+    .Anuncios h1{
+        font-size: 30px;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    
+    .Filtro h2{
+        font-size: 25px;
+        margin-bottom: 10%;
+        margin-left: 10px;
+    }
+
+    .Selectlist{
+        font-size: 16px;
+    }
+    
+    label {
+        font-size: 18px;
+    }
+
+    .Posted-adds{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .Filtro{
+        margin-top: 3%;
+        width: 35%;
+    }
+}
+
+@media (min-width: 1000px){
+    .Anuncios{
+        width: 1000px;
+        height: min-content;
+    }
+
+    .Anuncios h1{
+        font-size: 35px;
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    
+    .Filtro h2{
+        font-size: 28px;
+        margin-bottom: 10%;
+        margin-left: 10px;
+    }
+
+    .Selectlist{
+        font-size: 18px;
+    }
+    
+    label {
+        font-size: 22px;
+    }
+
+    .Posted-adds{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .Filtro{
+        margin-top: 3%;
+        width: 30%;
+    }
+}
+
+@media (min-width: 1400px){
+    .Anuncios{
+        width: 100%;
+        height: min-content;
+    }
+
+    .Anuncios h1{
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .Filtro h2{
+        font-size: 28px;
+        margin-bottom: 10%;
+        margin-left: 10px;
+    }
+
+    .Selectlist{
+        font-size: 18px;
+    }
+    
+    label {
+        font-size: 22px;
+    }
+
+    .Posted-adds{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .Filtro{
+        margin-top: 3%;
+        width: 20%;
+    }
+}

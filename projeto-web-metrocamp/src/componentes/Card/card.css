@@ -3,7 +3,7 @@
 .Publicacao {
   margin-top: 5%;
   height: min-content;
-  min-width: 275px !important;
+  width: 275px;
   overflow: hidden;
   border: 3px solid #1565c0;
   border-radius: 25px;
@@ -17,7 +17,7 @@
   border-radius: 21px 21px 0 0;
 }
 
-.Publicacao h1 {
+.Publicacao h2 {
   font-size: 20px;
   font-family: "Inter";
   margin: 10px 45px 15px 0px;
@@ -58,4 +58,188 @@
 
 .LocalizacaoPost h5 {
   margin: 0;
+}
+
+@media (min-width: 300px){
+  .Publicacao {
+    height: min-content;
+    width: 150px;
+  }
+
+  .ParedeImg img {
+    height: 100px;
+    width: 100%;
+  }
+
+  .Publicacao h2 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .Publicacao h5 {
+    width: 100%;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .TrabalhosPost {
+    height: 16px;
+    width: 70px;
+    margin-left: 5px;
+  }
+
+  .Publicacao h6 {
+    font-size: 13px;
+    margin: 0px 15px;
+  }
+
+  .LocalizacaoPost {
+    width: 100%;
+    align-items: center;
+    margin: 15px 45px 10px 10px;
+  }
+  
+  .LocalizacaoPost h5 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 350px){
+  .Publicacao {
+    height: min-content;
+    width: 150px;
+  }
+}
+
+@media (min-width: 400px){
+  .Publicacao {
+    height: min-content;
+    width: 150px;
+  }
+
+}
+
+@media (min-width: 500px){
+  .Publicacao {
+    height: min-content;
+    width: 150px;
+  }
+}
+
+@media (min-width: 600px){
+  .Publicacao {
+    height: min-content;
+    width: 170px;
+  }
+}
+
+@media (min-width: 700px){
+  .Publicacao {
+    height: min-content;
+    width: 200px;
+  }
+
+  .ParedeImg img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .Publicacao h2 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .Publicacao h5 {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .TrabalhosPost {
+    height: 20px;
+    width: 80px;
+    margin-left: 5px;
+  }
+
+  .Publicacao h6 {
+    font-size: 15px;
+    margin: 0px 15px;
+  }
+}
+
+@media (min-width: 1000px){
+  .Publicacao {
+    height: min-content;
+    width: 170px;
+  }
+
+  .ParedeImg img {
+    height: 125px;
+    width: 100%;
+  }
+
+  .Publicacao h2 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .Publicacao h5 {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .TrabalhosPost {
+    height: 20px;
+    width: 75px;
+    margin-left: 5px;
+  }
+
+  .Publicacao h6 {
+    font-size: 15px;
+    margin: 0px 15px;
+  }
+}
+
+@media (min-width: 1400px){
+  .Publicacao {
+    height: min-content;
+    width: 250px;
+  }
+
+  .ParedeImg img {
+    height: 180px;
+    width: 100%;
+  }
+
+  .Publicacao h2 {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .Publicacao h5 {
+    width: 100%;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .TrabalhosPost {
+    height: 25px;
+    width: 90px;
+    margin-left: 5px;
+  }
+
+  .Publicacao h6 {
+    font-size: 20px;
+    margin: 0px 15px;
+  }
 }

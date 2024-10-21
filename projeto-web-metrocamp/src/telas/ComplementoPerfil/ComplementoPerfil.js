@@ -35,27 +35,24 @@ export function ComplementoPerfil() {
     ];
 
     const professionsOptions = [
-        { value: 'Pedreiro', label: 'Pedreiro' },
-        { value: 'Pintor', label: 'Pintor' },
-        { value: 'Calheiro', label: 'Calheiro' },
-        { value: 'Encanador', label: 'Encanador' },
-        { value: 'Carpinteiro', label: 'Carpinteiro' },
-        { value: 'Eletricista', label: 'Eletricista' },
-        { value: 'Serralheiro', label: 'Serralheiro' },
-        { value: 'Marceneiro', label: 'Marceneiro' },
-        { value: 'Mecânico', label: 'Mecânico' },
-        { value: 'Bombeiro Hidráulico', label: 'Bombeiro Hidráulico' },
-        { value: 'Gesseiro', label: 'Gesseiro' },
         { value: 'Azulejista', label: 'Azulejista' },
-        { value: 'Vidraceiro', label: 'Vidraceiro' },
-        { value: 'Ferreiro', label: 'Ferreiro' },
+        { value: 'Calheiro(a)', label: 'Calheiro(a)' },
+        { value: 'Carpinteiro(a)', label: 'Carpinteiro(a)' },
+        { value: 'Eletricista(a)', label: 'Eletricista(a)' },
+        { value: 'Encanador(a)', label: 'Encanador(a)' },
+        { value: 'Faxineiro(a)', label: 'Faxineiro(a)' },
+        { value: 'Fretes', label: 'Fretes' },
+        { value: 'Funileiro(a)', label: 'Funileiro(a)' },
+        { value: 'Gesseiro(a)', label: 'Gesseiro(a)' },
+        { value: 'Jardineiro(a)', label: 'Jardineiro(a)' },
+        { value: 'Marceneiro(a)', label: 'Marceneiro(a)' },
+        { value: 'Mecânico(a)', label: 'Mecânico(a)' },
         { value: 'Montador de Móveis', label: 'Montador de Móveis' },
-        { value: 'Jardineiro', label: 'Jardineiro' },
-        { value: 'Reparador de Aparelhos', label: 'Reparador de Aparelhos' },
-        { value: 'Pintor Automotivo', label: 'Pintor Automotivo' },
-        { value: 'Soldador', label: 'Soldador' },
-        { value: 'Operador de Máquinas', label: 'Operador de Máquinas' },
-        // Adicione outras profissões aqui
+        { value: 'Pedreiro(a)', label: 'Pedreiro(a)' },
+        { value: 'Pintor(a)', label: 'Pintor(a)' },
+        { value: 'Serralheiro(a)', label: 'Serralheiro(a)' },
+        { value: 'Vidraceiro(a)', label: 'Vidraceiro(a)' },
+        { value: 'Outros', label: 'Outros' }
     ];
 
     const handleCityChange = (selectedOption) => {

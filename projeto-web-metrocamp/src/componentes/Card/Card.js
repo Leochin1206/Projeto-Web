@@ -9,7 +9,7 @@ export function Card() {
             <div className="ParedeImg">
                 <img src={ParedePintada} alt="" />
             </div>
-            <h1>Pintor de Paredes</h1>
+            <h2>Pintor de Paredes</h2>
             <div className="TrabalhosPost">
                 <h6>Pintor</h6>
             </div>
