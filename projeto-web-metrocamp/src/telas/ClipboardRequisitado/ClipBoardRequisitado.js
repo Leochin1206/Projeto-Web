@@ -19,7 +19,7 @@ export function ClipBoardRequisitado() {
                         <h1>Requisitado</h1>
                     </div>
 
-                    <div className='Cards'>
+                    <div className='CardsRequisitado'>
                         <CardPrancheta />
                         <CardPrancheta />
                     </div>
@@ -30,7 +30,7 @@ export function ClipBoardRequisitado() {
                         <h1>Em Andamento</h1>
                     </div>
 
-                    <div className='Cards'>
+                    <div className='CardsRequisitado'>
                         <CardPrancheta />
                         <CardPrancheta />
                     </div>

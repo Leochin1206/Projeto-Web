@@ -109,8 +109,7 @@
   font-size: 27px;
   font-family: 'Inter';
   font-weight: bold;
-  margin-top: 1.875rem;
-  margin-bottom: 1.6rem;
+  color: black;
 }
 
 .filtro .escrita{
@@ -327,7 +326,6 @@
   .button-area{
     display: flex;
     width: calc(100% - 120px);
-    gap: 30px;
     padding: 0 60px;
     align-items: center;
     justify-content: center;
@@ -402,6 +400,12 @@
   .Cards > * {
     min-width: 190px;
     height: 340px;
+  }
+}
+
+@media (max-width: 1115px){
+  .button-area{
+    gap: 90px;
   }
 }
 

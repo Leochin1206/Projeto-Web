@@ -21,7 +21,7 @@ export function ClipBoardPrestado() {
                         <h1>Requisitado</h1>
                     </div>
 
-                    <div className='Cards'>
+                    <div className='CardsPrestado'>
                         <ClipBoardRequerido />
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export function ClipBoardPrestado() {
                         <h1>Em Andamento</h1>
                     </div>
 
-                    <div className='Cards'>
+                    <div className='CardsPrestado'>
                         <ClipBoardAndamento />
                     </div>
                 </div>
