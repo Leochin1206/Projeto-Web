@@ -12,23 +12,26 @@ import { Clipboard } from './telas/Clipboard/Clipboard';
 import { CriarNovoPost } from './telas/CriarNovoPost/CriarNovoPost';
 import { InfoService } from './telas/InfoService/InfoService';
 import { ComplementoPerfil } from './telas/ComplementoPerfil/ComplementoPerfil';
+import { UserProvider } from './componentes/Context/UserContext';
 
 const Routing = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
-        <Route path="/Cadastro" element={<Cadastro />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Clipboard" element={<Clipboard />} />
-        <Route path="/Perfil" element={<PerfilScreen />} />
-        <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
-        <Route path="/InfoService" element={<InfoService />} />
-        <Route path="/ComplementoPerfil" element={<ComplementoPerfil />}/>
-        {/* Adicione outras rotas conforme necessário */}
-      </Route>
-    </Routes>
-  </Router>
+  <UserProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
+          <Route path="/Cadastro" element={<Cadastro />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Clipboard" element={<Clipboard />} />
+          <Route path="/Perfil" element={<PerfilScreen />} />
+          <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
+          <Route path="/InfoService" element={<InfoService />} />
+          <Route path="/ComplementoPerfil" element={<ComplementoPerfil />}/>
+          {/* Adicione outras rotas conforme necessário */}
+        </Route>
+      </Routes>
+    </Router>
+  </UserProvider>  
 );
 
 

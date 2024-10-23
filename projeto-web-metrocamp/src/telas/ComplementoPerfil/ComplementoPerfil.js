@@ -2,10 +2,60 @@ import '../ComplementoPerfil/ComplementoPerfil.css';
 import { Avaliacao } from '../../componentes/Avaliacao/Avaliacao';
 import Select from 'react-select';
 import { useState } from 'react';
-import ImagemPerfil from '../../images/icone.png'
+import ImagemPerfil from '../../images/icone.png';
+import {useUserContext} from "../../componentes/Context/UserContext";
+
 
 
 export function ComplementoPerfil() {
+
+    const {userData, saveData }= useUserContext();
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleSubmit = async (event)=>{
+    event.preventDefault();
+    setIsLoading(true);
+    
+        const formElement = document.getElementById("formsCP");
+        const formData = new FormData(formElement);
+
+        // Cria o objeto de dados combinando os valores do input e selects
+        const dados = {
+            telefone: formData.get("telefone"),
+            cidade: selectedCity?.value || null, 
+            profissao: selectedProfessions.map(profissao => profissao.value) 
+        };
+
+        
+        saveData(dados);
+
+        
+        const dadosJson = JSON.stringify(userData);
+
+    try{
+        const response = await fetch("http://localhost:8080/users", { 
+        method: "POST",
+        headers: {"Content-type": "application/json"},
+        body: dadosJson});
+    
+    
+        if (response.ok) {
+            //const data = await response.json();
+            console.log("Usuário criado com sucesso:", userData);
+        } else {
+            const errorText = await response.text();
+            console.error("Erro na resposta", response, errorText);
+        }
+    } catch (error) {
+        console.error("Erro de requisição", error);
+       
+    } finally{
+        setTimeout(() => {
+            setIsLoading(false); 
+          }, 2000); 
+    }  
+}
+
     // Gerenciamento de estado para cidade e profissões
     const [selectedCity, setSelectedCity] = useState(null);
     const [selectedProfessions, setSelectedProfessions] = useState([]);
@@ -79,14 +129,9 @@ export function ComplementoPerfil() {
             </div>
 
             <div className='CamposPerfil'>
-                <form className='formsCP' method="get">
+                <form className='formsCP' id="formsCP" onSubmit={handleSubmit} method="get" >
 
                     <div className='CamposUm'>
-                        <span className="camposPerfilCP">
-                            <label htmlFor="nome">*Nome:</label>
-                            <input type="text" name="nome" id="nomeCP" placeholder="Digite seu nome" required></input>
-                        </span>
-
                         <span className="camposPerfilCP">
                             <label htmlFor="telefone">*Telefone:</label>
                             <input type="text" name="telefone" id="telefoneCP" placeholder="Ex: (19) 99999-9999" required></input>
@@ -119,12 +164,16 @@ export function ComplementoPerfil() {
                             />
                         </span>
                     </div>
+                    <div className='btnSalvar'>
+                        <button style={{
+                                backgroundColor: isLoading ? '#ccc' : '#007BFF', 
+                                cursor: isLoading ? 'not-allowed' : 'pointer', }}
+                                type='submit'>Salvar</button>
+                    </div>
                 </form>
             </div>
 
-            <div className='btnSalvar'>
-                <button>Salvar</button>
-            </div>
+
         </div>
     );
 }
