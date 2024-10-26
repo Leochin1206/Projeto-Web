@@ -12,7 +12,7 @@ export function Preco() {
 
                 <div className="Bolinha"></div>
 
-                <h6>Calheiro | Pedreiro | Encanador</h6>
+                <h6>Calheiro | Pedreiro</h6>
             </div>
 
             <h1>R$800,00</h1>

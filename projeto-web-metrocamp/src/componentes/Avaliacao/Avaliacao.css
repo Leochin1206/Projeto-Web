@@ -15,30 +15,34 @@
     box-sizing: border-box; 
     margin: 20px; 
     display: flex;
-    flex-direction: column; /* coluna */
-    align-items: center; /* horizontal */
-    justify-content: center; /* vertical */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
 }
 
 .header {
     display: flex;
     align-items: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 15px; 
+}
+.header > span{
+    font-size: 12px;
 }
 
-h1{
+.header > h1{
     font-size: 25px;
     font-family: 'Inter';
     margin: 0;
+    color: black;
 }
 
-h5{
+.IconeAva > h5{
     font-size: 15px;
     font-family: 'Inter';
     margin: 0 10px;
 }
 
-h6{
+.ComponenteAva > h6{
     font-size: 12px;
     font-family: 'Inter';
     margin: 0 0 0 10px;
@@ -47,12 +51,11 @@ h6{
 .EstrelaIcon{
     display: flex;
     gap: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-.EstrelaIcon img{
-    width: 23px;
-    min-height: 23px;
+.estrela{
+    font-size: 25px;
 }
 
 .EstrelaIconSmall{
@@ -60,9 +63,8 @@ h6{
     gap: 2px;
 }
 
-.EstrelaIconSmall img{
-    width: 10px;
-    height: 10px;
+.estrelaSmall{
+    font-size: 12px;
 }
 
 .Avaliacao {
@@ -81,9 +83,9 @@ h6{
     gap: 10px;
 }
 
-.icone {
-    width: 30px; 
-    height: 30px;
+.iconeUsuario{
+    width: 25px; 
+    height: 25px;
 }
 
 .info {
@@ -104,4 +106,111 @@ h6{
     font-size: 12px;
     font-family: 'Inter', sans-serif;
     margin-top: 10px; 
+}
+
+@media (min-width: 300px){
+    .ComponenteAva {
+        width: 90%;
+        height: min-content;
+        margin: 20px; 
+    }
+    
+    .header > h1{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    
+    .IconeAva > h5{
+        font-size: 15px;
+        margin: 0px;
+    }
+    
+    .ComponenteAva > h6{
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .estrela{
+        font-size: 23px;
+    }
+
+    .estrelaSmall{
+        font-size: 13px;
+    }
+    
+    .Avaliacao {
+        width: 85%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .IconeAva{
+        gap: 10px;
+    }
+    
+    .iconeUsuario{
+        width: 25px; 
+        height: 25px;
+    }
+    
+    .Bolinha {
+        width: 5px;
+        height: 5px;
+        margin-top: 5px; 
+    }
+    
+    .descricao {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 10px; 
+    }
+}
+
+@media (min-width: 600px){
+    .ComponenteAva {
+        width: 75%;
+        height: min-content;
+        margin: 20px; 
+    }
+}
+
+@media (min-width: 900px){
+    .ComponenteAva {
+        width: 100%;
+    }
+    
+    
+    .IconeAva > h5{
+        font-size: 18px;
+        margin: 0px;
+    }
+    
+    .ComponenteAva > h6{
+        font-size: 20px;
+    }
+
+    .estrela{
+        font-size: 25px;
+    }
+
+    .estrelaSmall{
+        font-size: 15px;
+    }
+    
+    .Avaliacao {
+        width: 85%;
+    }
+    
+    .iconeUsuario{
+        width: 30px; 
+        height: 30px;
+    }
+    
+    .Bolinha {
+        margin-top: 7px; 
+    }
+    
+    .descricao {
+        font-size: 14px;
+    }
 }
