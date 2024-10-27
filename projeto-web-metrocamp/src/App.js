@@ -8,6 +8,7 @@ import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
           <h5>Crie um post já!</h5>
 
           <div className='botao-criar'>
-            <button onClick={isLogged ? "" : CheckCadastro}>Criar</button>
+            <Link to="/CriarNovoPost"><button onClick={isLogged ? "" : CheckCadastro}>Criar</button></Link>
           </div>
         </div>
 
@@ -41,7 +42,7 @@ function App() {
           <h5>Encontre um profissional!</h5>
 
           <div className='botao-criar'>
-            <button onClick={isLogged ? "" : CheckCadastro}>Buscar</button>
+            <Link to="/Anuncios"><button onClick={isLogged ? "" : CheckCadastro}>Buscar</button></Link>
           </div>
         </div>
       </div>
@@ -123,8 +124,6 @@ function App() {
           <Card />
           <Card />
           <Card />
-          <Card />
-   
         </div>
       </div>
 

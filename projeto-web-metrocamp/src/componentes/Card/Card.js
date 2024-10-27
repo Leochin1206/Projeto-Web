@@ -1,13 +1,14 @@
 import "../Card/card.css";
 import { IoLocationSharp } from "react-icons/io5";
 import ParedePintada from "../../images/image-painter.png"
+import { Link } from "react-router-dom";
 
 export function Card() {
     return (
 
         <div className="Publicacao">
             <div className="ParedeImg">
-                <img src={ParedePintada} alt="" />
+                <Link to="/InfoService"><img src={ParedePintada} alt="" /></Link>
             </div>
             <h2>Pintor de Paredes</h2>
             <div className="TrabalhosPost">
