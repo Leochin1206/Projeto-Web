@@ -4,7 +4,9 @@ import ImagemPintura2 from '../../images/pintor2.png';
 import ImagemPintura3 from '../../images/pintor3.png';
 import { useState } from 'react';
 import { FaMapMarkerAlt, FaShareAlt } from "react-icons/fa";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Preco } from '../../componentes/Preco/Preco.js'
+import { Avaliacao } from '../../componentes/Avaliacao/Avaliacao.js';
 
 export function InfoService() {
 
@@ -21,6 +23,7 @@ export function InfoService() {
 
     return (
         <div className="InfoService">
+
             <div className="Infos">
                 <h1>Pintura de Paredes</h1>
 
@@ -28,7 +31,10 @@ export function InfoService() {
                     <img src={imagens[indiceAtual]} alt='' className="ImageInfoPost" />
                 </div>
 
-               
+                <div className='arrow-button'>
+                    <button className='botaoSetaTras' onClick={handlePrevImage}><IoIosArrowBack /></button>
+                    <button className='botaoSetaFrente' onClick={handleNextImage}><IoIosArrowForward /></button>
+                </div>
 
                 <h2>
                     Pinto sua parede da cor que você quiser aqui na região de
@@ -41,23 +47,27 @@ export function InfoService() {
                 <div className='localizacao'>
                     <div>
                         <FaMapMarkerAlt className='IconeLoc' />
+
                         <div className='loc-infos'>
                             <h5>Campinas</h5>
                             <h6>Campinas-SP</h6>
                         </div>
+
                     </div>
+
                     <div>
                         <FaShareAlt className='IconeLoc' />
-                        <h4>Compartilhar</h4>
+                        <button className='btnCompartilhar'>
+                            <h4>Compartilhar</h4>
+                        </button>
                     </div>
                 </div>
-
             </div>
 
             <div className="Componentes">
                 <Preco />
 
-                {/* Inserir componente avaliação aqui */}
+                <Avaliacao />
             </div>
 
         </div>

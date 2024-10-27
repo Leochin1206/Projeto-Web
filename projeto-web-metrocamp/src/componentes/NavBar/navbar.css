@@ -50,6 +50,7 @@ body {
   position: fixed;
   top: 64px;
   right: -100%;
+  z-index: 1000;
   width: 60%;
   height: 100vh;
   background-color: #1565c0;

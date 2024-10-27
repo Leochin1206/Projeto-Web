@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaUserCircle, FaStar } from "react-icons/fa";
-import './Avaliacao.css'; // Certifique-se de que o caminho para o CSS está correto
+import './Avaliacao.css';
 
 export function Avaliacao() {
     return (
         <div className='ComponenteAva'>
             <div className="header">
-                <h1>Avaliações</h1> 
+                <h1>Avaliações</h1>
                 <span>(25)</span>
             </div>
 
@@ -24,7 +24,7 @@ export function Avaliacao() {
                 <div className="IconeAva">
                     <FaUserCircle className="iconeUsuario" />
                     <h5>Rafael Feltrin</h5>
-                    <div className="Bolinha"></div>
+                    <div className="Bolinha" />
                     <div className="EstrelaIconSmall">
                         <FaStar className="estrelaSmall" />
                         <FaStar className="estrelaSmall" />
@@ -40,9 +40,9 @@ export function Avaliacao() {
                 <div className="IconeAva">
                     <FaUserCircle className="iconeUsuario" />
                     <h5>Rafael Feltrin</h5>
-                    <div className="Bolinha"></div>
+                    <div className="Bolinha" />
                     <div className="EstrelaIconSmall">
-                    <FaStar className="estrelaSmall" />
+                        <FaStar className="estrelaSmall" />
                         <FaStar className="estrelaSmall" />
                         <FaStar className="estrelaSmall" />
                         <FaStar className="estrelaSmall" />
@@ -56,9 +56,9 @@ export function Avaliacao() {
                 <div className="IconeAva">
                     <FaUserCircle className="iconeUsuario" />
                     <h5>Rafael Feltrin</h5>
-                    <div className="Bolinha"></div>
+                    <div className="Bolinha" />
                     <div className="EstrelaIconSmall">
-                    <FaStar className="estrelaSmall" />
+                        <FaStar className="estrelaSmall" />
                         <FaStar className="estrelaSmall" />
                         <FaStar className="estrelaSmall" />
                         <FaStar className="estrelaSmall" />

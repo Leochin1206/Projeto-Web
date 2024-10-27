@@ -53,12 +53,13 @@
     background-color: black;
   }
 
-h1{
+.Preco > h1{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 30px;
     padding: 5%;
     align-self: center;
+    color: black;
 }
 
 .SolicitarServico{
@@ -73,10 +74,9 @@ h1{
     cursor: pointer; 
     outline: none; 
     transition: background-color 0.3s ease, border-color 0.3s ease; 
-    padding: 2%; 
 }
 
-.SolicitarServico:hover {
+.SolicitarServico :hover {
     background-color: #9CCBF4; 
     border-color: #0D47A1; 
 }
@@ -87,242 +87,281 @@ h2{
     margin: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 300px){
     .Preco{
-        display: flex;
-        width: 40vh;
-        height: 20vh;
-        flex-direction: column;
-        border: 2px solid #1565C0;
-        border-radius: 15px;
-        align-items: center;
-        justify-content: space-around;
+        width: 80%;
+        height: min-content;
         padding: 1%;
     }
-
+    
     .PerfilUsuario{
-        width: 90%;
-        height: 20%;
-        background-color: #B7DBF4;
-        border-radius: 15px; 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 10px; 
+        width: 95%;
+        height: 25%;
+        border-radius: 50px; 
+        padding: 0px; 
         margin: 2%; 
     }
-
-    .PerfilUsuario img{
-        width: 32px;
-        height: 32px;
       
+    .PerfilUsuario img{
+        width: 23px;
+        height: 23px;  
     }
-
+      
     .PerfilUsuario h5{
-        font-size: 18px;
-        font-family: 'Inter';
-        font-weight: 700;
-        margin: 0;
+        font-size: 13px;
+        align-self: center;
     }
       
     .PerfilUsuario h6{
-        font-size: 14px;
-        font-family: 'Inter';
-        font-weight: 400;
-        margin: 0;
-    }
-
-    h1{
-        font-family: 'Inter';
-        font-weight: 700;
-        font-size: 37px;
-        padding: 5%;
+        font-size: 10px;
         align-self: center;
     }
-
-}
-
-@media (min-width: 1400px) {
-    .Preco{
-        display: flex;
-        width: 55vh;
-        height: 25vh;
-        flex-direction: column;
-        border: 3px solid #1565C0;
-        border-radius: 15px;
-        align-items: center;
-        justify-content: space-around;
-        padding: 1%;
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
     }
-
-    .PerfilUsuario{
-        width: 90%;
+    
+    .Preco > h1{
+        font-size: 25px;
+        padding: 0%;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .SolicitarServico{
+        width: 70%;
         height: 20%;
-        background-color: #B7DBF4;
-        border-radius: 15px; 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 10px; 
-        margin: 2%; 
-    }
-
-    .PerfilUsuario img{
-        width: 45px;
-        height: 45px;
-      
-    }
-
-    .PerfilUsuario h5{
-        font-size: 24px;
-        font-family: 'Inter';
-        font-weight: 700;
-        margin: 0;
-    }
-      
-    .PerfilUsuario h6{
-        font-size: 18px;
-        font-family: 'Inter';
-        font-weight: 400;
-        margin: 0;
-    }
-
-    h1{
-        font-family: 'Inter';
-        font-weight: 700;
-        font-size: 45px;
-        padding: 5%;
-        align-self: center;
-    }
-
-    h2{
-        font-family: 'Inter';
-        font-size: 30px;
-        margin: 0;
+        margin-bottom: 5px; 
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 600px){
     .Preco{
-        display: flex;
-        width: 50vw;
-        height: 40vh;
-        margin: 0;
-        flex-direction: column;
-        border: 3px solid #1565C0;
-        border-radius: 15px;
-        align-items: center;
-        justify-content: space-around;
+        width: 50%;
+        height: min-content;
         padding: 1%;
     }
-
+    
     .PerfilUsuario{
-        width: 90%;
-        height: 20%;
-        background-color: #B7DBF4;
-        border-radius: 15px; 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 10px; 
+        width: 95%;
+        height: 5vh;
+        border-radius: 50px; 
+        padding: 0px; 
         margin: 2%; 
     }
-
-    .PerfilUsuario img{
-        width: 55px;
-        height: 55px;
       
+    .PerfilUsuario img{
+        width: 25px;
+        height: 25px;  
     }
-
+      
     .PerfilUsuario h5{
-        font-size: 30px;
-        font-family: 'Inter';
-        font-weight: 700;
-        margin: 0;
+        font-size: 15px;
+        align-self: center;
     }
       
     .PerfilUsuario h6{
-        font-size: 22px;
-        font-family: 'Inter';
-        font-weight: 400;
-        margin: 0;
-    }
-
-    h1{
-        font-family: 'Inter';
-        font-weight: 700;
-        font-size: 55px;
-        padding: 5%;
+        font-size: 12px;
         align-self: center;
     }
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .Preco > h1{
+        font-size: 30px;
+        padding: 0%;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
 
-    h2{
-        font-family: 'Inter';
+@media (min-width: 800px){
+    .Preco{
+        width: 60%;
+        height: min-content;
+        padding: 1%;
+    }
+    
+    .PerfilUsuario{
+        width: 90%;
+        height: 5vh;
+        margin: 2%; 
+    }
+      
+    .PerfilUsuario img{
+        width: 27px;
+        height: 27px;  
+    }
+      
+    .PerfilUsuario h5{
+        font-size: 20px;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 15px;
+    }
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .Preco > h1{
         font-size: 35px;
-        margin: 0;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .SolicitarServico{
+        width: 65%;
+        height: 20%;
+    }
+
+    .SolicitarServico > h2{
+        font-size: 23px;
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 900px){
     .Preco{
-        display: flex;
-        width: 70vh;
-        height: 30vh;
-        flex-direction: column;
-        border: 3px solid #1565C0;
-        border-radius: 15px;
-        align-items: center;
-        justify-content: space-around;
+        width: 90%;
+        height: min-content;;
         padding: 1%;
     }
-
+    
     .PerfilUsuario{
         width: 90%;
-        height: 20%;
-        background-color: #B7DBF4;
-        border-radius: 15px; 
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0 10px; 
+        height: 4vh;
         margin: 2%; 
     }
-
-    .PerfilUsuario img{
-        width: 55px;
-        height: 55px;
       
+    .PerfilUsuario img{
+        width: 23px;
+        height: 23px;  
     }
-
+      
     .PerfilUsuario h5{
-        font-size: 30px;
-        font-family: 'Inter';
-        font-weight: 700;
-        margin: 0;
+        font-size: 16px;
     }
       
     .PerfilUsuario h6{
-        font-size: 22px;
-        font-family: 'Inter';
-        font-weight: 400;
-        margin: 0;
+        font-size: 12px;
+    }
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .Preco > h1{
+        font-size: 30px;
     }
 
-    h1{
-        font-family: 'Inter';
-        font-weight: 700;
-        font-size: 55px;
-        padding: 5%;
-        align-self: center;
+    .SolicitarServico{
+        width: 70%;
+        height: 20%;
     }
 
-    h2{
-        font-family: 'Inter';
+    .SolicitarServico > h2{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1100px){
+    .Preco{
+        width: 80%;
+        height: min-content;
+        padding: 1%;
+    }
+}
+
+@media (min-width: 1400px){
+    .Preco{
+        width: 75%;
+        padding: 1%;
+    }
+    
+    .PerfilUsuario{
+        width: 95%;
+    }
+      
+    .PerfilUsuario img{
+        width: 27px;
+        height: 27px;  
+    }
+      
+    .PerfilUsuario h5{
+        font-size: 20px;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 16px;
+    }
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .Preco > h1{
         font-size: 35px;
-        margin: 0;
+    }
+
+    .SolicitarServico{
+        width: 60%;
+        height: 20%;
+    }
+
+    .SolicitarServico > h2{
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1900px){
+    .Preco{
+        width: 70%;
+        padding: 1%;
+        margin-bottom: 20px;
+    }
+    
+    .PerfilUsuario{
+        width: 95%;
+        height: 5vh;
+    }
+      
+    .PerfilUsuario img{
+        width: 35px;
+        height: 35px;  
+    }
+      
+    .PerfilUsuario h5{
+        font-size: 30px;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 25px;
+    }
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .Preco > h1{
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .SolicitarServico{
+        width: 70%;
+    }
+
+    .SolicitarServico > h2{
+        font-size: 35px;
     }
 }
