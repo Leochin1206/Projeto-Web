@@ -214,3 +214,115 @@
         font-size: 14px;
     }
 }
+
+@media (min-width: 1100px){
+    .ComponenteAva {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1400px){
+    .ComponenteAva {
+        width: 90%;
+    }
+
+    .header > h1{
+        font-size: 32px;
+        margin-top: 15px;
+    }
+    
+    .IconeAva > h5{
+        font-size: 20px;
+        margin: 0px;
+    }
+    
+    .ComponenteAva > h6{
+        font-size: 25px;
+    }
+
+    .estrela{
+        font-size: 26px;
+    }
+
+    .estrelaSmall{
+        font-size: 16px;
+        margin-top: 1%;
+    }
+    
+    .Avaliacao {
+        width: 85%;
+    }
+    
+    .iconeUsuario{
+        width: 30px; 
+        height: 30px;
+    }
+    
+    .Bolinha {
+        margin-top: 7px; 
+    }
+    
+    .descricao {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1900px){
+    .ComponenteAva {
+        width: 90%;
+    }
+
+    .header > h1{
+        font-size: 45px;
+        margin-top: 20px;
+    }
+
+    .header > span{
+        font-size: 25px;
+    }
+    
+    .IconeAva > h5{
+        font-size: 35px;
+        margin: 0px;
+    }
+    
+    .ComponenteAva > h6{
+        font-size: 40px;
+    }
+
+    .EstrelaIcon{
+        gap: 4px;
+    }
+
+    .EstrelaIconSmall{
+        gap: 4px;
+    }
+
+    .estrela{
+        font-size: 35px;
+    }
+
+    .estrelaSmall{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    
+    .Avaliacao {
+        width: 90%;
+    }
+    
+    .iconeUsuario{
+        width: 45px; 
+        height: 45px;
+    }
+    
+    .Bolinha {
+        width: 8px;
+        height: 8px;
+        margin-top: 15px; 
+    }
+    
+    .descricao {
+        font-size: 30px;
+    }
+}

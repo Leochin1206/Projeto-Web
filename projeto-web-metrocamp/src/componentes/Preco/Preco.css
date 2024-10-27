@@ -182,7 +182,7 @@ h2{
 @media (min-width: 800px){
     .Preco{
         width: 60%;
-        height: 20vh;
+        height: min-content;
         padding: 1%;
     }
     
@@ -229,7 +229,7 @@ h2{
 @media (min-width: 900px){
     .Preco{
         width: 90%;
-        height: 15vh;
+        height: min-content;;
         padding: 1%;
     }
     
@@ -271,4 +271,97 @@ h2{
     }
 }
 
-/*quebra em 1150*/
+@media (min-width: 1100px){
+    .Preco{
+        width: 80%;
+        height: min-content;
+        padding: 1%;
+    }
+}
+
+@media (min-width: 1400px){
+    .Preco{
+        width: 75%;
+        padding: 1%;
+    }
+    
+    .PerfilUsuario{
+        width: 95%;
+    }
+      
+    .PerfilUsuario img{
+        width: 27px;
+        height: 27px;  
+    }
+      
+    .PerfilUsuario h5{
+        font-size: 20px;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 16px;
+    }
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .Preco > h1{
+        font-size: 35px;
+    }
+
+    .SolicitarServico{
+        width: 60%;
+        height: 20%;
+    }
+
+    .SolicitarServico > h2{
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1900px){
+    .Preco{
+        width: 70%;
+        padding: 1%;
+        margin-bottom: 20px;
+    }
+    
+    .PerfilUsuario{
+        width: 95%;
+        height: 5vh;
+    }
+      
+    .PerfilUsuario img{
+        width: 35px;
+        height: 35px;  
+    }
+      
+    .PerfilUsuario h5{
+        font-size: 30px;
+    }
+      
+    .PerfilUsuario h6{
+        font-size: 25px;
+    }
+      
+    .Bolinha{
+        width: 5px;
+        height: 5px;
+    }
+    
+    .Preco > h1{
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .SolicitarServico{
+        width: 70%;
+    }
+
+    .SolicitarServico > h2{
+        font-size: 35px;
+    }
+}

@@ -41,7 +41,7 @@
 
 .arrow-button {
     position: absolute;
-    top: 37%;
+    top: 35%;
     left: 0;
     right: 0;
     width: 100%;
@@ -62,11 +62,11 @@
 }
 
 .botaoSetaTras {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .botaoSetaFrente {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .Infos h2 {
@@ -149,7 +149,26 @@ h3 {
     align-items: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 300px) and  (max-width: 350px) {
+    .arrow-button {
+        top: 32%;
+    }
+    
+    .botaoSetaTras, 
+    .botaoSetaFrente {
+        font-size: 28px;
+    }
+    
+    .botaoSetaTras {
+        margin-left: 12px;
+    }
+    
+    .botaoSetaFrente {
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: 700px) {
     .Infos h1 {
         font-size: 35px;
         padding: 10px;
@@ -224,7 +243,7 @@ h3 {
     .slider {
         width: 94%;
     }
-    
+
     .botaoSetaTras, 
     .botaoSetaFrente {
         font-size: 30px;
@@ -284,3 +303,142 @@ h3 {
     
 }
 
+@media (min-width: 1100px){
+    .InfoService .Componentes{
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 1400px){
+    .InfoService .Componentes{
+        margin-top: 6%;
+    }
+
+    .Infos h1 {
+        font-size: 35px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .botaoSetaTras, 
+    .botaoSetaFrente {
+        font-size: 40px;
+    }
+    
+    .botaoSetaTras {
+        margin-left: 30px;
+    }
+    
+    .botaoSetaFrente {
+        margin-right: 30px;
+    }
+    
+    .Infos h2 {
+        font-size: 25px;
+        padding: 15px;
+        margin-top: -1%;
+    }
+
+    h3 {
+        font-size: 35px;
+        padding: 2%;
+    }
+
+    .IconeLoc {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .loc-infos h5 {
+        font-size: 28px;
+    }
+    
+    .loc-infos h6 {
+        font-size: 20px;
+    }
+
+    .btnCompartilhar h4{
+        font-size: 26px;
+    }
+}
+
+
+@media (min-width: 1900px){
+    .Infos {
+        width: 55%;
+    }
+
+    .Infos h1 {
+        font-size: 45px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        margin-left: 40px;
+    }
+
+    .slider {
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .arrow-button {
+        top: 40%;
+    }
+    
+    .botaoSetaTras, 
+    .botaoSetaFrente {
+        font-size: 55px;
+    }
+    
+    .botaoSetaTras {
+        margin-left: 60px;
+    }
+    
+    .botaoSetaFrente {
+        margin-right: 60px;
+    }
+    
+    .Infos h2 {
+        width: 90%;
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 35px;
+        margin-top: -1%;
+        padding: 2%;
+    }
+
+    .localizacao {
+        width: 90%;
+        align-self: center;
+    }
+
+    h3 {
+        font-size: 45px;
+        padding: 2%;
+        margin-left: 25px;
+    }
+
+    .IconeLoc {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .loc-infos h5 {
+        font-size: 35px;
+    }
+    
+    .loc-infos h6 {
+        font-size: 24px;
+    }
+
+    .btnCompartilhar h4{
+        font-size: 38px;
+    }
+
+    .InfoService .Componentes{
+        width: 45%;
+        margin-top: 8%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
