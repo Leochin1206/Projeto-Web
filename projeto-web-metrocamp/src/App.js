@@ -6,21 +6,21 @@ import { GiElectricalResistance, GiVacuumCleaner, GiWateringCan, GiGate } from "
 import { FaTruck, FaPaintRoller } from "react-icons/fa";
 import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import { useUserContext } from './componentes/Context/UserContext';
 
 function App() {
 
-  const [isLogged] = useState(false)
 
   const navigate = useNavigate();
+  const {isLoggedIn} = useUserContext();
+
   const CheckCadastro = () => {
-    if (!isLogged) {
+    if (!isLoggedIn) {
       navigate('/Cadastro');
-    } else {
-      // Lógica adicional para quando o usuário estiver logado
-    }
+    } 
   };
 
   return (
@@ -33,7 +33,7 @@ function App() {
           <h5>Crie um post já!</h5>
 
           <div className='botao-criar'>
-            <Link to="/CriarNovoPost"><button onClick={isLogged ? "" : CheckCadastro}>Criar</button></Link>
+            <button onClick={()=> isLoggedIn ? navigate("/CriarNovoPost") : CheckCadastro()}>Criar</button>
           </div>
         </div>
 
@@ -42,7 +42,7 @@ function App() {
           <h5>Encontre um profissional!</h5>
 
           <div className='botao-criar'>
-            <Link to="/Anuncios"><button onClick={isLogged ? "" : CheckCadastro}>Buscar</button></Link>
+            <button onClick={()=> isLoggedIn ? navigate("/Anuncios") : CheckCadastro()}>Buscar</button>
           </div>
         </div>
       </div>
@@ -53,57 +53,57 @@ function App() {
         <div className='botoes'>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><PiSolarRoofDuotone /></button>
+            <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><PiSolarRoofDuotone /></button>
             <h6>Calheiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><GiElectricalResistance /></button>
+          <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><GiElectricalResistance /></button>
             <h6>Eletricista</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><PiPipeBold /></button>
+          <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><PiPipeBold /></button>
             <h6>Encanador(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><GiVacuumCleaner /></button>
+          <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><GiVacuumCleaner /></button>
             <h6>Faxineiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><FaTruck /></button>
+          <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><FaTruck /></button>
             <h6>Fretes</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><GiWateringCan /></button>
+            <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><GiWateringCan /></button>
             <h6>Jardineiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><MdOutlineCarpenter /></button>
+            <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><MdOutlineCarpenter /></button>
             <h6>Marceneiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><FaTrowelBricks /></button>
+            <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><FaTrowelBricks /></button>
             <h6>Pedreiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><FaPaintRoller /></button>
+            <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><FaPaintRoller /></button>
             <h6>Pintor(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><GiGate /></button>
+            <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><GiGate /></button>
             <h6>Serralheiro(a)</h6>
           </div>
 
           <div className='conjunto'>
-            <button onClick={isLogged ? "" : CheckCadastro}><BsThreeDots /></button>
+            <button onClick={()=> isLoggedIn ? "" : CheckCadastro()}><BsThreeDots /></button>
             <h6>Outros</h6>
           </div>
         </div>

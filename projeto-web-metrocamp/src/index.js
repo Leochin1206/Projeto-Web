@@ -14,25 +14,28 @@ import { ClipBoardRequisitado } from './telas/ClipboardRequisitado/ClipBoardRequ
 import { ClipBoardPrestado } from './telas/ClipboardPrestado/ClipBoardPrestado.js';
 import { ComplementoPerfil } from './telas/ComplementoPerfil/ComplementoPerfil.js';
 import { Anuncios } from './telas/Anuncios/Anuncios.js';
+import { UserProvider } from './componentes/Context/UserContext';
 
 const Routing = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<App />} /> {/* Renderiza App quando na rota principal */}
-        <Route path="/Cadastro" element={<Cadastro />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Perfil" element={<PerfilScreen />} />
-        <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
-        <Route path="/InfoService" element={<InfoService />} />
-        <Route path="/ClipBoardRequisitado" element={<ClipBoardRequisitado />} />
-        <Route path="/ClipBoardPrestado" element={<ClipBoardPrestado />} />
-        <Route path="/CompletandoPerfil" element={<ComplementoPerfil />} />
-        <Route path="/Anuncios" element={<Anuncios />} />
-        {/* Adicione outras rotas conforme necessário */}
-      </Route>
-    </Routes>
-  </Router>
+  <UserProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<App />} /> 
+          <Route path="/Cadastro" element={<Cadastro />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Perfil" element={<PerfilScreen />} />
+          <Route path="/CriarNovoPost" element={<CriarNovoPost />} />
+          <Route path="/InfoService" element={<InfoService />} />
+          <Route path="/ClipBoardRequisitado" element={<ClipBoardRequisitado />} />
+          <Route path="/ClipBoardPrestado" element={<ClipBoardPrestado />} />
+          <Route path="/CompletandoPerfil" element={<ComplementoPerfil />} />
+          <Route path="/Anuncios" element={<Anuncios />} />
+          {/* Adicione outras rotas conforme necessário */}
+        </Route>
+      </Routes>
+    </Router>
+  </UserProvider>
 );
 
 

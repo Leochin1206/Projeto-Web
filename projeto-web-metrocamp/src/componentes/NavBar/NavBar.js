@@ -5,8 +5,14 @@ import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useUserContext } from "../Context/UserContext";
 
 export function NavBar() {
+
+    const navigate = useNavigate();
+    const {isLoggedIn} = useUserContext();
+
     const [menuOpen, setMenuOpen] = useState(false);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 820);
 
@@ -38,8 +44,12 @@ export function NavBar() {
                     </div>
                     <div className="icons">
                         <Link to="/"><div className="home-icon"><FaHome /></div></Link>
-                        <Link to="/ClipBoardRequisitado"><div className="clipboard-icon"><FaClipboardList /></div></Link>
-                        <Link to="/Perfil"><div className="user-icon"><FaUser /></div></Link>
+                        <Link to={isLoggedIn ? "/ClipBoardRequisitado" : "/Cadastro"}>
+                            <div className="clipboard-icon"><FaClipboardList /></div>
+                        </Link>
+                        <Link to={isLoggedIn ? "/Perfil" : "/Cadastro"}>
+                            <div className="user-icon"><FaUser /></div>
+                        </Link>
                     </div>
                 </>
 
@@ -56,9 +66,13 @@ export function NavBar() {
 
                     <ul className={`menu ${menuOpen ? 'open' : ''}`}>
                         <h5 className="menu-title">Precisou de um serviço? <br />Pede pra mim</h5>
-                        <Link to="/"><li><FaHome className="icon" /> Início</li></Link>
-                        <Link to="/InfoService"><li><FaClipboardList className="icon" /> Tarefas</li></Link>
-                        <Link to="/Perfil"><li><FaUser className="icon" /> Perfil</li></Link>
+                        <Link to="/"><li><FaHome className="icon" /> Início</li></Link>                       
+                        <Link to={isLoggedIn ? "/ClipBoardRequisitado" : "/Cadastro"}>
+                            <li><FaClipboardList className="icon" /> Tarefas</li>
+                        </Link>
+                        <Link to={isLoggedIn ? "/Perfil" : "/Cadastro"}>
+                            <li><FaUser className="icon" /> Perfil</li>
+                        </Link>
                     </ul>
                 </>
             )

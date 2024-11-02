@@ -71,7 +71,7 @@ label{
     font-weight: 600;
 }
 
-input[id="password"],
+input[id="senha"],
 textarea {
             width: 85%;
             padding: 2%;

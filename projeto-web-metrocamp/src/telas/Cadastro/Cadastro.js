@@ -1,8 +1,27 @@
 import "./cadastro.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useUserContext } from "../../componentes/Context/UserContext";
+
 export function Cadastro() {
 
+    const {saveData} = useUserContext();
+    const navigate = useNavigate();
 
+    const handleSubmit = (event)=>{
+        event.preventDefault();
+
+        const formElement = document.getElementById("CadastroForm");
+        const formData = new FormData(formElement);
+
+        const data = {
+            nome:formData.get("nome"),
+            email:formData.get("email"),
+            senha:formData.get("senha"),
+        }
+
+        saveData(data);
+        navigate("/ComplementoPerfil");
+}
 
 
     return (
@@ -12,7 +31,7 @@ export function Cadastro() {
                 <h5>Cadastro</h5>
             </div>
             
-            <form className="forms" action="https://webhook.site/6eb59883-6c66-4d25-80be-115a37a0ad17" method="get">
+            <form className="forms" onSubmit={handleSubmit} method="get" id ="CadastroForm">
                 <div className="acertaForms">
 
                     <span className="campos">
@@ -27,7 +46,7 @@ export function Cadastro() {
 
                     <span className="campos">
                         <label for="password">*Senha:</label>
-                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required></input>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required></input>
                     </span>
 
                     <button type="submit" className="botao-forms">Cadastrar</button>
