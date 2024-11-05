@@ -2,6 +2,32 @@ import './Preco.css'
 import ImagemPerfil from '../../images/icone.png'
 
 export function Preco() {
+    async function criarServico(clienteId, profissionalId, descricaoServico) {
+        try {
+            const response = await fetch('/servicos/criar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    clienteId,
+                    profissionalId,
+                    descricaoServico
+                })
+            });
+    
+            if (!response.ok) {
+                throw new Error('Erro ao criar serviço');
+            }
+    
+            const result = await response.json();
+            console.log(result); // Ou exiba uma mensagem de sucesso para o usuário
+    
+        } catch (error) {
+            console.error('Erro:', error);
+        }
+    }
+    
     return (
         <div className='Preco'>
 
@@ -17,7 +43,7 @@ export function Preco() {
 
             <h1>R$800,00</h1>
 
-            <button className="SolicitarServico">
+            <button className="SolicitarServico" onClick={criarServico}>
                 <h2>Solicitar Serviço</h2>
             </button>
         </div>

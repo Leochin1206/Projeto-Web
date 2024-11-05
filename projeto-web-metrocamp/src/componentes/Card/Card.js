@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useUserContext } from "../Context/UserContext";
 
-export function Card() {
+export function Card({ titulo, descricao, preco, cidadeServico, imagem }) {
 
     const navigate = useNavigate();
     const {isLoggedIn} = useUserContext();
@@ -14,16 +14,16 @@ export function Card() {
 
         <div className="Publicacao">
             <div className="ParedeImg">
-                <Link to={isLoggedIn ? "/InfoService" : "/Cadastro"}><img src={ParedePintada} alt="" /></Link>
+                <Link to={isLoggedIn ? "/InfoService" : "/Cadastro"}><img src={imagem} alt="" /></Link>
             </div>
-            <h2>Pintor de Paredes</h2>
+            <h2>{titulo}</h2>
             <div className="TrabalhosPost">
-                <h6>Pintor</h6>
+                <h6>{descricao}</h6>
             </div>
-            <h5>R$ 100,00 - 800,00</h5>
+            <h5>{preco}</h5>
             <div className="LocalizacaoPost">
                 <IoLocationSharp />
-                <h5>Campinas - SP</h5>
+                <h5>{cidadeServico}</h5>
             </div>
         </div>
     )

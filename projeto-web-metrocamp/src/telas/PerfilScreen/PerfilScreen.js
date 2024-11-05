@@ -3,16 +3,18 @@ import { CardPerfil } from "../../componentes/CardPerfil/CardPerfil";
 import { FaUserCircle, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ImagemPerfil from '../../images/icone.png'
+import { useUserContext } from '../../componentes/Context/UserContext';
 
 export function PerfilScreen() {
+    const {userData} = useUserContext();
     return (
         <div className='todosConteudos'>
             <div className="CentralizarCards">
                 <div className="perfilDetalhadoDontainer">
                     <div className="perfilDados">
                         <img src={ImagemPerfil} alt='' className='imagem-perfil' />
-                        <h2>Renato Willian</h2>
-                        <h4>Calheiro | Pedreiro | Encanador</h4>
+                        <h2>{userData.nome}</h2>
+                        <h4>{userData.profissao}</h4>
                     </div>
 
                     <div className="servicos">

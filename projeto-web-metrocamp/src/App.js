@@ -6,14 +6,14 @@ import { GiElectricalResistance, GiVacuumCleaner, GiWateringCan, GiGate } from "
 import { FaTruck, FaPaintRoller } from "react-icons/fa";
 import { MdOutlineCarpenter } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { useUserContext } from './componentes/Context/UserContext';
 
 function App() {
 
-
+  const [posts, setPosts] = useState([]);
   const navigate = useNavigate();
   const {isLoggedIn} = useUserContext();
 
@@ -22,6 +22,26 @@ function App() {
       navigate('/Cadastro');
     } 
   };
+  useEffect(() => {
+    // Função para buscar os dados dos posts
+    const fetchPosts = async () => {
+      try {
+        const response = await fetch('http://localhost:8080/post', {
+          method: 'GET', // Define o método HTTP como GET
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          setPosts(data);
+        } else {
+          console.error("Erro ao buscar os posts.");
+        }
+      } catch (error) {
+        console.error("Erro de rede:", error);
+      }
+    };
+    fetchPosts();
+  }, []);
 
   return (
     <div className="App">
@@ -113,17 +133,16 @@ function App() {
       <div className='Cards-section'>
         <h6>Mais recentes:</h6>
         <div className='Cards'>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        {posts.map(post => (
+                        <Card
+                            key={post.id}
+                            titulo={post.titulo}
+                            descricao={post.descricao}
+                            preco={post.preco}
+                            cidadeServico={post.cidadeServico}
+                            imagem={post.imagemUrl}
+                        />
+          ))}
         </div>
       </div>
 
