@@ -1,6 +1,7 @@
 import '../CriarNovoPost/CriarNovoPost.css'
 import InserirImg from '../../images/InserirImg.png'
 import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function CriarNovoPost(){
     const [cidadeServico, setCidadeServico] = useState('');
@@ -9,7 +10,8 @@ export function CriarNovoPost(){
     const [descricao, setDescricao] = useState('');
     const [imagemCaminho, setImagem] = useState('');
     const [imagemPreview, setImagemPreview] = useState(InserirImg);
-
+    const navigate = useNavigate();
+    
     //Função da seleção de cidades
     const handleSelectchange = (event) => {
         setCidadeServico(event.target.value);
@@ -81,6 +83,7 @@ export function CriarNovoPost(){
     
             if (response.ok) {
                 console.log("Post salvo com sucesso!");
+                navigate("/");
             } else {
                 console.error("Erro ao salvar o post.");
             }
