@@ -29,7 +29,7 @@ const Routing = () => (
           <Route path="/InfoService" element={<InfoService />} />
           <Route path="/ClipBoardRequisitado" element={<ClipBoardRequisitado />} />
           <Route path="/ClipBoardPrestado" element={<ClipBoardPrestado />} />
-          <Route path="/CompletandoPerfil" element={<ComplementoPerfil />} />
+          <Route path="/ComplementoPerfil" element={<ComplementoPerfil />} />
           <Route path="/Anuncios" element={<Anuncios />} />
           {/* Adicione outras rotas conforme necessário */}
         </Route>

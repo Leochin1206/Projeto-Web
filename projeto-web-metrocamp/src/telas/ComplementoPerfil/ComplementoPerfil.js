@@ -4,13 +4,14 @@ import Select from 'react-select';
 import { useState } from 'react';
 import ImagemPerfil from '../../images/icone.png';
 import {useUserContext} from "../../componentes/Context/UserContext";
-
-
+import { useNavigate } from 'react-router-dom';
 
 export function ComplementoPerfil() {
 
     const {userData, saveData }= useUserContext();
     const [isLoading, setIsLoading] = useState(false);
+    const navigate = useNavigate();
+    const {login} = useUserContext();
 
     const handleSubmit = async (event)=>{
     event.preventDefault();
@@ -42,6 +43,8 @@ export function ComplementoPerfil() {
         if (response.ok) {
             //const data = await response.json();
             console.log("Usuário criado com sucesso:", userData);
+            login();
+            navigate("/");
         } else {
             const errorText = await response.text();
             console.error("Erro na resposta", response, errorText);
@@ -131,7 +134,7 @@ export function ComplementoPerfil() {
 
                     <div className='CamposUm'>
                         <span className="camposPerfilCP">
-                            <label htmlFor="telefone">*Telefone:</label>
+                            <label >*Telefone:</label>
                             <input type="text" name="telefone" id="telefoneCP" placeholder="Ex: (19) 99999-9999" required></input>
                         </span>
                     </div>
@@ -139,7 +142,7 @@ export function ComplementoPerfil() {
                     <div className='CamposDois'>
                         {/* Campo Cidade */}
                         <span className="camposPerfilCP">
-                            <label htmlFor="cidade">*Cidade:</label>
+                            <label >*Cidade:</label>
                             <Select
                                 value={selectedCity}
                                 onChange={handleCityChange}
@@ -151,7 +154,7 @@ export function ComplementoPerfil() {
 
                         {/* Campo Profissão */}
                         <span className="camposPerfilCP">
-                            <label htmlFor="profissao">*Profissão:</label>
+                            <label >*Profissão:</label>
                             <Select
                                 value={selectedProfessions}
                                 onChange={handleProfessionsChange}
