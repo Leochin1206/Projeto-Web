@@ -1,47 +1,35 @@
 .PagPrincipal{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    /*height: 100vh;*/
-    width: 100%;
-    /*background-color: black;*/
+    height: 100vh;
+    width: 100vw;
 }
 
 .PagPrincipal h1{
     font-size: 25px;
-    margin-top: 3%;
     color: black;
 }
 
 .gapImgTitle{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-content: space-around;
     margin-top: 2%;
     height: 60%;
-    /*background-color: blue;*/
-    display: flex;
 }
 
 .ImgCriar{
     width: 87%;
     height: 60%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    
 }
 
-.ImgContent{
-    object-fit: fill;
-}
 .uploadImg{
     flex-direction: column;
     align-content: flex-end;
-   /*background-color: purple;*/
 }
 
 .AcertarForms{
@@ -49,15 +37,13 @@
     flex-direction: column;
     justify-content: flex-start;
     width:100%;
+    height: 30%;
     margin-top: 1%;
-    /*background-color: orange;*/
 }
 
 .camposCriarPost{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     width:100%;
     margin-top: 1%;
 }
@@ -71,8 +57,8 @@ label{
 
 input[id="Titulo"],
 textarea {
-            width: 40%;
-            height: 2%;
+            width: 80%;
+            height: 10%;
             padding: 2%;
             border: 2px solid #1565C0;
             border-radius: 10px;
@@ -80,33 +66,32 @@ textarea {
 
 input[id="Descricao"],
 textarea {
-            width: 40%;
-            height: 2%;
+            width: 80%;
+            height: 10%;
             padding: 2%;
             border: 2px solid #1565C0;
             border-radius: 10px;
         }
-/*
+
 label[id="nomeTitulo"],
 textarea{
-            {margin-right: 39%;}
+            margin-right: 39%;
         }
 
 label[id="nomeDescricao"],
 textarea{
             margin-right: 37%;
         }
-*/
+
 
         /* Div da Lista e da Precificacao*/
         .cidadePreco {
             display: flex;
-            align-content: center;
+            align-content: flex-end;
             justify-content: space-between;
-            height: 70%;
-            width: 100%;
+            height: 40%;
+            width: 110%;
             gap: 5%;
-           /* background-color: green;*/
         }
 
         /* Estilização da Lista de cidades */
@@ -210,10 +195,12 @@ textarea{
 
         .divBotao {
             display: flex;
+            flex-direction: row;
+            align-content: center;
             justify-content: center;
             padding: 2%;
             width: 96%;
-            /*background-color: red;*/
+            height: 35%;
         }
 
         .botaoPost {
@@ -222,11 +209,9 @@ textarea{
             font-family: 'Inter';
             font-size: 15px;
             font-weight: 700;
-            height: 180%;
-            width: 15%;
+            height: 15%;
+            width: 20%;
             border-radius: 10px;
             border: none;
             justify-content: center;
         }
-          
-       
