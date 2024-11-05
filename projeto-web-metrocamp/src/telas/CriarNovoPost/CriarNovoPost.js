@@ -8,6 +8,7 @@ export function CriarNovoPost(){
     const [titulo, setTitulo] = useState('');
     const [descricao, setDescricao] = useState('');
     const [imagemCaminho, setImagem] = useState('');
+    const [imagemPreview, setImagemPreview] = useState(InserirImg);
 
     //Função da seleção de cidades
     const handleSelectchange = (event) => {
@@ -19,11 +20,14 @@ export function CriarNovoPost(){
         //setImagem(event.target.files[0]);
         const file = event.target.files[0];
 
+
+
         if(file && file.size > 2 * 1024 * 1024){
             alert('Tamanho de imagem ultrapassa 2MB');
             setImagem(null);
         }else{
             setImagem(file);
+            setImagemPreview(URL.createObjectURL(file));
         }
     }
 
@@ -32,6 +36,7 @@ export function CriarNovoPost(){
         event.preventDefault(); //impede q a página recarregue
 
         //interface mais flexivel do javaScript e bom para dados mistos
+        /*
         const formCampos = new FormData(); 
         formCampos.append('data', JSON.stringify({
             titulo,
@@ -55,8 +60,35 @@ export function CriarNovoPost(){
         } catch(error){
             console.log('Erro na requisicao:', error)
         }
-    };
+            */
 
+        const data = {
+            titulo: "Exemplo de Título",
+            descricao: "Exemplo de Descrição",
+            preco: "100.00",
+            cidadeServico: "Cidade Exemplo"
+        };
+    
+        const formData = new FormData();
+        formData.append("data", new Blob([JSON.stringify(data)], { type: "application/json" }));
+        formData.append("imagem", imagemCaminho);
+    
+        try {
+            const response = await fetch("http://localhost:8080/post", {
+                method: "POST",
+                body: formData
+            });
+    
+            if (response.ok) {
+                console.log("Post salvo com sucesso!");
+            } else {
+                console.error("Erro ao salvar o post.");
+            }
+        } catch (error) {
+            console.error("Erro de rede:", error);
+        }
+    };
+        
     //Função da precificação
     function optionSelected(preco){
         switch(preco){
@@ -90,7 +122,7 @@ export function CriarNovoPost(){
                     <h1>Crie um novo Post:</h1>
                 <div className='gapImgTitle'>
                     <div className='Imgcriar'>    
-                        <img src={InserirImg} alt='ImgCriarPost'/>
+                        <img src={imagemPreview} alt='ImgCriarPost' className='imgContent'/>
                     </div>
 
                     <div className='uploadImg'>
