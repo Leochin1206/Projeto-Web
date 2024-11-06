@@ -20,13 +20,12 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 - **Cadastro de Usuários:** Permite que usuários se registrem e façam login.
 - **Anúncios de Serviços:** Usuários podem criar e gerenciar anúncios para serviços que oferecem.
 - **Busca e Filtros:** Permite que usuários busquem serviços disponíveis com base em categorias e localizações.
-- **Sistema de Mensagens:** Facilita a comunicação entre quem oferece e quem procura serviços.
-
+  
 ## Tecnologias Utilizadas
 
 - **Frontend:** React JS
 - **Backend:** Java (Orientação a Objetos)
-- **Banco de Dados:** A decidir
+- **Banco de Dados:** My SQL
 - **Metodologia Ágil:** Scrum
 
 ## Instalações necessárias
