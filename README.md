@@ -28,6 +28,32 @@ O projeto será utilizado para duas disciplinas acadêmicas:
 - **Banco de Dados:** My SQL
 - **Metodologia Ágil:** Scrum
 
+## Design
+
+  - **Nosso site terá um total de 9 páginas:**
+
+    - **Home** - Apresentara alguns serviços ao usuário, um sistema básico de filtro e também dois botões para faciliar a criação e busca de serviços.
+    
+    - **Login** - Tela que permitirá o usuário logar em sua conta.
+    
+    - **Cadastro** - Tela que permitirá o usuário criar um conta no site.
+    
+    - **Criação de Post** - A tela permitirá que o usuário crie seu post de serviço adicionando fotos, título, descrição e Preço.
+    
+    - **Perfil** - Tela que apresentará todos os serviços que aquele usuário presta e também a sua avaliação com estrelas e comentários.
+    
+    - **Lista de serviços Prestador** - Tela que apresentará os serviços concluidos, em andamento e novos requerimentos para quem presta serviços, com opções de finalizar, aceitar e recusar serviços.
+    
+    - **Lista de serviços Requirinte** -  Tela que apresentará os serviços concluidos, em andamento e novos requerimentos para quem requere serviços.
+    
+    - **Busca/Filtro posts** - Lista com mais posts de serviços dos quais o usuário irá poder filtrar por preço, local ou a profissão do prestador.
+     
+    - **Post de Serviço** - Tela com mais inormações de um serviço específico, local, preço, perfil do prestador, descrição, fotos e um botão para requirir o serviço em questão.
+  
+  
+  - Link do Figma com todas as telas e o Style Guide:
+  **https://www.figma.com/design/Jc2fBBquSJHrzpcMswJAXW/Pede-Pra-Mim?node-id=0-1&node-type=CANVAS&t=WmDXKQIETSCpHMWb-0**
+
 ## Instalações necessárias
 
 - **npm install**
