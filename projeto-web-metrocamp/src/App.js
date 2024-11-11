@@ -10,8 +10,23 @@ import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { useUserContext } from './componentes/Context/UserContext';
+import React, { useRef } from 'react';
 
 function App() {
+  const cardsRef = useRef(null); // Defina a referência aqui
+
+  // Exemplo de uso das funções de rolagem
+  const scrollLeft = () => {
+    if (cardsRef.current) {
+      cardsRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (cardsRef.current) {
+      cardsRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
 
 
   const navigate = useNavigate();
@@ -110,20 +125,29 @@ function App() {
 
       </div>
 
-      <div className='Cards-section'>
+      <div className="Cards-section">
         <h6>Mais recentes:</h6>
-        <div className='Cards'>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="carousel-container">
+          <button className="scroll-button left" onClick={scrollLeft}>&lt;</button>
+          <div className="Cards" ref={cardsRef}>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <button className="scroll-button right" onClick={scrollRight}>&gt;</button>
         </div>
       </div>
 

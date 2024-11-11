@@ -21,14 +21,14 @@
     justify-content: center;
     background-color: #1565C0;
     border-radius: 20px;
-    margin-top: 2%;
-    width: 25%;
+    margin-top: 5%;
+    width: 45%;
     height: 67px;
 }
 
 .CompletePerfil h1{
     color: white;
-    font-size: 25px;
+    font-size: 16px;
 }
 
 .formsCP {
@@ -96,6 +96,12 @@ input[id="telefoneCP"]:focus,
     color: white;
 }
 
+.btnSalvar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btnSalvar button {
     background-color: #1565C0;
     color: white;
@@ -117,7 +123,7 @@ input[id="telefoneCP"]:focus,
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    flex-direction: column;
 }
 
 .CamposPerfil {
@@ -139,8 +145,158 @@ input[id="telefoneCP"]:focus,
 }
 
 .FotoPerfil img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin-top: 35%;
     margin-bottom: 20%;
+}
+
+@media (min-width: 900px){
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Inter';
+    }
+    
+    .CentralizarCP{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .CompletePerfil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1565C0;
+        border-radius: 20px;
+        margin-top: 2%;
+        width: 25%;
+        height: 67px;
+    }
+    
+    .CompletePerfil h1{
+        color: white;
+        font-size: 22px;
+    }
+    
+    .formsCP {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    
+    .camposPerfilCP {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 400px;
+    }
+    
+    label {
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    
+    input[id="nomeCP"],
+    input[id="telefoneCP"],
+    textarea {
+        padding: 10px;
+        border: 2px solid #1565C0;
+        border-radius: 10px;
+        font-size: 16px;
+        outline: none;
+    }
+    
+    input[id="nomeCP"]:focus, 
+    input[id="telefoneCP"]:focus,
+    .react-select__control--is-focused {
+        border-color: #0d47a1; 
+    }
+    
+    .react-select__control {
+        width: 100%;
+        padding: 5px;
+        border: 2px solid #1565C0;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    
+    .react-select__menu {
+        max-height: 150px; 
+    }
+    
+    .react-select__multi-value {
+        background-color: #e3f2fd;
+        border-radius: 10px;
+    }
+    
+    .react-select__option--is-focused {
+        background-color: #bbdefb;
+        color: black;
+    }
+    
+    .react-select__option--is-selected {
+        background-color: #1565C0;
+        color: white;
+    }
+    
+    .btnSalvar button {
+        background-color: #1565C0;
+        color: white;
+        font-family: 'Inter';
+        font-size: 24px;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 15px 40px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btnSalvar button:hover {
+        background-color: #0d47a1;
+    }
+    
+    .CamposUm, .CamposDois{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 100px;
+        margin-bottom: 2%;
+    }
+    
+    .CamposPerfil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .FotoPerfil{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .FotoPerfil button{
+        background: none;
+        border: none;
+    }
+    
+    .FotoPerfil img{
+        width: 150px;
+        height: 150px;
+        margin-top: 35%;
+        margin-bottom: 20%;
+    }
+
 }
