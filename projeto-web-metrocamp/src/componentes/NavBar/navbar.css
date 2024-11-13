@@ -23,7 +23,14 @@ body {
 .search-box {
   display: flex;
   width: 50%;
+  min-width: 230px;
   align-items: center;
+}
+
+.button-fix {
+  position: relative;
+  left: 30px;
+  color: black;
 }
 
 #search {

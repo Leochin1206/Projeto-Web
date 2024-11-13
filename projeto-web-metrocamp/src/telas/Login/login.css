@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/*
 
 .Login{
     display: flex;
@@ -99,4 +100,214 @@ textarea {
     border-radius: 10px;
     box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.1);
     border: none;
+}
+
+*/
+
+*{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+}
+
+.Login{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.style_login_logo{
+    display: flex;
+    width: 23%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 2%;    
+}
+
+.Login h3{
+    font-family: 'Inter';
+    color: #1565C0;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.Login h5{
+    font-family: 'Inter';
+    color: #1565C0;
+    font-size: 2em;
+}
+
+.formsLogin{
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    width: 85%;
+    border: 2px solid #1565C0;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.acertaLogin{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 10%;
+    width:100%;
+    height: 90%;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:90%;
+    align-self: end;
+}
+
+label{
+    color: black;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+input[id="senha"],
+textarea {
+            width: 85%;
+            padding: 2%;
+            border: 2px solid #1565C0;
+            border-radius: 10px;
+        }
+
+input[id="email"],
+textarea {
+            width: 85%;
+            padding: 2%;
+            border: 2px solid #1565C0;
+            border-radius: 10px;
+        }
+
+.botao-logar{
+    background-color: #1565C0;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    height: 10%;
+    width: 55%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+@media (min-width: 900px){
+    .Login{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        width: 100%;
+        height: 80vh;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    .style_login_logo{
+        display: flex;
+        width: 23%;
+        height: 10%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        margin-bottom: 2%;    
+    }
+    
+    .Login h3{
+        font-family: 'Inter';
+        color: #1565C0;
+        text-decoration: underline;
+        font-size: 25px;
+    }
+    
+    .Login h5{
+        font-family: 'Inter';
+        color: #1565C0;
+        font-size: 3em;
+    }
+    
+    .formsLogin{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 60%;
+        border: 2px solid #1565C0;
+        border-radius: 20px;
+        align-items: center;
+    }
+    
+    .acertaLogin{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap: 10%;
+        width:100%;
+        height: 90%;
+    }
+    
+    .campos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width:90%;
+        align-self: end;
+    }
+    
+    label{
+        color: black;
+        font-size: 18px;
+        font-family: 'Inter';
+        font-weight: 600;
+    }
+    
+    input[id="senha"],
+    textarea {
+                width: 85%;
+                padding: 2%;
+                border: 2px solid #1565C0;
+                border-radius: 10px;
+            }
+    
+    input[id="email"],
+    textarea {
+                width: 85%;
+                padding: 2%;
+                border: 2px solid #1565C0;
+                border-radius: 10px;
+            }
+    
+    .botao-logar{
+        background-color: #1565C0;
+        color: white;
+        font-family: 'Inter';
+        font-size: 25px;
+        font-weight: 500;
+        height: 11%;
+        width: 28%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+    
 }

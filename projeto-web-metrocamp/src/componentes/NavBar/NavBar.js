@@ -34,7 +34,7 @@ export function NavBar() {
 
     return (
         <div className="NavBar">
-            <img src={logo} alt="" />
+            <Link to="/"><img src={logo} alt="" /></Link>
 
             {isLargeScreen ? (
                 <>
