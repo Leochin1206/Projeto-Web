@@ -5,6 +5,7 @@
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 .PagPrincipal h1{
@@ -12,19 +13,32 @@
     color: black;
 }
 
-.gapImgTitle{
+/*.gapImgTitle{
+    display: flex;
     flex-direction: column;
     align-content: space-around;
     margin-top: 2%;
     height: 60%;
+    width: 87%;
+    background-color: gray;
+}*/
+
+.ImgContent{
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain;
+    display: block; 
+    
 }
 
 .ImgCriar{
     width: 87%;
     height: 60%;
-    display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .uploadImg{
@@ -55,7 +69,7 @@ label{
     font-weight: 600;
 }
 
-input[id="Titulo"],
+input[id="Titulo"], input[id="Descricao"],
 textarea {
             width: 80%;
             height: 10%;
@@ -64,38 +78,23 @@ textarea {
             border-radius: 10px;
         }
 
-input[id="Descricao"],
-textarea {
-            width: 80%;
-            height: 10%;
-            padding: 2%;
-            border: 2px solid #1565C0;
-            border-radius: 10px;
-        }
-
-label[id="nomeTitulo"],
-textarea{
-            margin-right: 39%;
-        }
-
-label[id="nomeDescricao"],
+label[id^="nome"],
 textarea{
             margin-right: 37%;
         }
-
 
         /* Div da Lista e da Precificacao*/
         .cidadePreco {
             display: flex;
             align-content: flex-end;
             justify-content: space-between;
-            height: 40%;
-            width: 110%;
-            gap: 5%;
+            height: auto;
+            width: 100%;
         }
 
         /* Estilização da Lista de cidades */
         .cidadeLista {
+            height: auto;
             display: flex;
             flex-direction: column;
             height: 200%;
@@ -111,7 +110,7 @@ textarea{
             border-color: #1565C0;
             border-width: 2px;
             width: 90%;
-            height: 5%;
+            min-height: 30px;
             font-family: 'Inter';
             font-size: 14px;
             appearance: none;
@@ -145,7 +144,6 @@ textarea{
             flex-direction: column;
             gap: 10px;
             align-items: start;
-            padding-top: 1%;
         }
 
         .pricing-options {
@@ -200,7 +198,9 @@ textarea{
             justify-content: center;
             padding: 2%;
             width: 96%;
-            height: 35%;
+            height: auto;
+            min-width: 20%;
+            min-height: 30%;
         }
 
         .botaoPost {
@@ -209,9 +209,84 @@ textarea{
             font-family: 'Inter';
             font-size: 15px;
             font-weight: 700;
-            height: 15%;
+            height: 25%;
             width: 20%;
             border-radius: 10px;
             border: none;
             justify-content: center;
+        }
+
+        @media (min-width: 700px) {
+            .PagPrincipal {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        
+            .ImgCriar {
+                width: 60%;
+            }
+        
+            .AcertarForms {
+                width: 35%;
+            }
+        
+            .divBotao {
+                width: 50%;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .ImgCriar {
+                width: 50%;
+            }
+        
+            .AcertarForms {
+                width: 40%;
+            }
+        
+            .botaoPost {
+                width: 60%;
+            }
+        }
+        
+        @media (min-width: 1100px) {
+            .ImgCriar {
+                width: 40%;
+            }
+        
+            .AcertarForms {
+                width: 45%;
+            }
+        
+            .divBotao {
+                width: 40%;
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            .ImgCriar {
+                width: 35%;
+            }
+        
+            .AcertarForms {
+                width: 50%;
+            }
+        
+            .botaoPost {
+                width: 40%;
+            }
+        }
+        
+        @media (min-width: 1900px) {
+            .ImgCriar {
+                width: 30%;
+            }
+        
+            .AcertarForms {
+                width: 80%;
+            }
+        
+            .botaoPost {
+                width: 30%;
+            }
         }

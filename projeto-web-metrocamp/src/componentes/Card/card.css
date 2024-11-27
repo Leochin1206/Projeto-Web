@@ -221,9 +221,9 @@
 
   .Publicacao h2 {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   
   .Publicacao h5 {

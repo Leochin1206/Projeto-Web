@@ -123,7 +123,7 @@ export function CriarNovoPost(){
         <div className="PagPrincipal">
             <form onSubmit={handleSubmit}>
                     <h1>Crie um novo Post:</h1>
-                <div className='gapImgTitle'>
+                
                     <div className='Imgcriar'>    
                         <img src={imagemPreview} alt='ImgCriarPost' className='imgContent'/>
                     </div>
@@ -131,7 +131,7 @@ export function CriarNovoPost(){
                     <div className='uploadImg'>
                     <input type='file' name='imagem' onChange={handleImagemChange} />
                     </div>
-                </div>    
+                    
                 <div className="AcertarForms">
                     <span className="camposCriarPost">
                         <label for="nome" id="nomeTitulo">Título:</label>
@@ -166,7 +166,7 @@ export function CriarNovoPost(){
                             <option value="Nova Odessa">Nova Odessa</option>
                             <option value="Paulínia">Paulínia</option>
                             <option value="Pedreira">Pedreira</option>
-                            <option value="Santa Bárbara d'Oeste">SBO</option>
+                            <option value="SBO">SBO</option>
                             <option value="Sumaré">Sumaré</option>
                             <option value="Valinhos">Valinhos</option>
                             <option value="Vinhedo">Vinhedo</option>
