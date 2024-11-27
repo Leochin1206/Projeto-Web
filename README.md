@@ -1,4 +1,4 @@
-# Projeto de Webgit 
+# Projeto de Web FrontEnd 
 
 ## Participantes: 
 - João Pedro Alves Belai
@@ -8,7 +8,7 @@
 
 ## Descrição
 
-Este projeto é um site desenvolvido para facilitar a busca e a oferta de trabalhos manuais. O objetivo é conectar pessoas que oferecem serviços como pintura, fretes, consertos, entre outros, com aqueles que precisam desses serviços. 
+Este projeto é um site desenvolvido para facilitar a busca e a oferta de trabalhos manuais. O objetivo é conectar pessoas que oferecem serviços como pintura, fretes, consertos, entre outros, com aqueles que precisam desses serviços. A API deste projeto está desponível no repositório: [Projeto Web BackEnd](https://github.com/joaoSouza3/Projeto-Web-Backend)
 
 O projeto será utilizado para duas disciplinas acadêmicas:
 
