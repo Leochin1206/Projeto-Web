@@ -52,6 +52,7 @@ export function CriarNovoPost() {
 
             if (response.ok) {
                 console.log("Post salvo com sucesso!");
+                console.log(formData.titulo);
                 navigate("/");
             } else {
                 console.error("Erro ao salvar o post.");

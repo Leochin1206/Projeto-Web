@@ -33,8 +33,11 @@ function App() {
         if (response.ok) {
           const data = await response.json();
           setPosts(data);
+          console.log(data);
+          console.log(data.forEach((url)=>url.imagemCaminho));
         } else {
-          console.error("Erro ao buscar os posts.");
+          console.log(response);
+          console.log(await response.json());
         }
       } catch (error) {
         console.error("Erro de rede:", error);
@@ -133,16 +136,18 @@ function App() {
       <div className='Cards-section'>
         <h6>Mais recentes:</h6>
         <div className='Cards'>
-        {posts.map(post => (
+          
+        {posts.length > 0 ? (posts.map(post => (
                         <Card
-                            key={post.id}
+                            key={post.id_servicos}
+                            post = {post}
                             titulo={post.titulo}
                             descricao={post.descricao}
                             preco={post.preco}
                             cidadeServico={post.cidadeServico}
-                            imagem={post.imagemUrl}
+                            imagemCaminho={post.imagemCaminho}
                         />
-          ))}
+          ))): <p>Carregando...</p>}
         </div>
       </div>
 

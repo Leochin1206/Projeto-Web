@@ -6,6 +6,7 @@
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -152,21 +153,16 @@
 }
 
 .Cards {
-  gap: 30px;
+  gap: 5%;
   display: flex;
+  flex: 1;
   flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
   overflow-x: auto;  
-  white-space: nowrap;  
+  height: 100%;
+  background-color: red;  
 }
 
-.Cards > * {
-  display: inline-block;  
-  min-width: 200px;
-  height: 350px;  
-  margin-right: 1rem; 
-  box-sizing: border-box;  
-}
 
 .Cards-section h6 {
   font-size: 1.25rem;
@@ -196,9 +192,9 @@
   }
 
   .Cards > * {
-    min-width: 150px; 
-    height: 300px;
-  }
+    min-width: 20%; 
+    height: 50%;
+    width: 100%;  }
 }
 
 /* Celulares Médios (481px - 768px) */
